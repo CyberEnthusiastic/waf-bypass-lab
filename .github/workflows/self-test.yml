@@ -1,0 +1,53 @@
+name: WAF Bypass Lab self-test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  self-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Start mock target in background
+        run: |
+          python mock_target.py 8088 &
+          sleep 2
+
+      - name: Run WAF Bypass Lab against mock target
+        run: |
+          python waf_lab.py http://127.0.0.1:8088 --i-am-authorized-to-test --delay-ms 10 --timeout 5
+
+      - name: Upload JSON report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: waf-report-json
+          path: reports/waf_report.json
+
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: waf-report-html
+          path: reports/waf_report.html
+
+      - name: Verify high coverage against mock WAF
+        run: |
+          python -c "
+          import json, sys
+          r = json.load(open('reports/waf_report.json'))
+          cov = r['summary']['coverage_percent']
+          print(f'Coverage: {cov}%')
+          # mock WAF should block at least 70% of payloads
+          if cov < 70:
+              print('FAIL: mock WAF coverage below expected baseline')
+              sys.exit(1)
+          print('PASS: mock WAF coverage meets baseline')
+          "

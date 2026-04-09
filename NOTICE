@@ -1,0 +1,27 @@
+AI Security Projects Suite
+Copyright (c) 2026 Adithya Vasamsetti (CyberEnthusiastic)
+https://github.com/CyberEnthusiastic
+
+This product is part of the AI Security Projects series, a collection of
+zero-dependency, production-ready security tools designed as commercial
+alternatives to expensive enterprise security platforms.
+
+Original author: Adithya Vasamsetti
+Contact: https://github.com/CyberEnthusiastic
+License: MIT (see LICENSE file)
+
+If you use, fork, or redistribute any part of this suite, attribution is
+appreciated but not required beyond what the MIT license mandates. Please
+preserve the copyright notice in source files.
+
+TRADEMARKS
+"AI Security Projects", "Security Command Center", "WAF Bypass Lab",
+"AI SAST Scanner", "Cloud Misconfiguration Hunter", "Prompt Injection Proxy",
+and "Compliance Gap Analyzer" are project names used by the original author.
+You may refer to these names when discussing or forking the projects, but
+please do not imply endorsement by the original author without permission.
+
+THIRD-PARTY COMPONENTS
+These projects use only Python standard library components except where
+explicitly noted in requirements.txt. See individual project READMEs for
+details on any external dependencies.

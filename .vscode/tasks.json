@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "WAF: start mock target",
+      "type": "shell",
+      "command": "python mock_target.py",
+      "isBackground": true,
+      "group": "build"
+    },
+    {
+      "label": "WAF: run against mock target",
+      "type": "shell",
+      "command": "python waf_lab.py http://127.0.0.1:8088 --i-am-authorized-to-test --delay-ms 20",
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "WAF: list categories",
+      "type": "shell",
+      "command": "python waf_lab.py --list-categories"
+    },
+    {
+      "label": "WAF: dry run",
+      "type": "shell",
+      "command": "python waf_lab.py http://localhost --dry-run"
+    },
+    {
+      "label": "WAF: open HTML report",
+      "type": "shell",
+      "command": "start reports/waf_report.html",
+      "windows": { "command": "start reports/waf_report.html" },
+      "linux":   { "command": "xdg-open reports/waf_report.html" },
+      "osx":     { "command": "open reports/waf_report.html" }
+    }
+  ]
+}

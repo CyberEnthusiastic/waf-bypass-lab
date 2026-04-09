@@ -1,0 +1,174 @@
+{
+  "category": "SQL Injection",
+  "cwe": "CWE-89",
+  "owasp": "A03:2021 - Injection",
+  "description": "OWASP-documented SQL injection payloads for WAF bypass testing. All payloads sourced from public security research.",
+  "payloads": [
+    {
+      "id": "SQLI-001",
+      "name": "Basic UNION SELECT",
+      "method": "GET",
+      "path": "/products",
+      "query": "id=1' UNION SELECT * FROM users--",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-002",
+      "name": "OR 1=1 authentication bypass",
+      "method": "GET",
+      "path": "/login",
+      "query": "username=admin&password=' OR '1'='1",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-003",
+      "name": "INFORMATION_SCHEMA enumeration",
+      "method": "GET",
+      "path": "/search",
+      "query": "text=1' UNION SELECT table_name FROM information_schema.tables--",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-004",
+      "name": "Boolean-based blind",
+      "method": "GET",
+      "path": "/login",
+      "query": "id=1 AND (SELECT SUBSTRING(@@version,1,1))='5'",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-005",
+      "name": "Time-based blind (WAITFOR)",
+      "method": "GET",
+      "path": "/search",
+      "query": "text=rugs'; WAITFOR DELAY '00:00:05'--",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-006",
+      "name": "LOAD_FILE exfiltration (POST)",
+      "method": "POST",
+      "path": "/api/wishlist",
+      "body": {"filter": "1' AND LOAD_FILE('/etc/passwd') IS NOT NULL--"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-007",
+      "name": "INTO OUTFILE",
+      "method": "GET",
+      "path": "/export",
+      "query": "table=users' INTO OUTFILE '/tmp/dump.txt'--",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-008",
+      "name": "Hex-encoded UNION",
+      "method": "POST",
+      "path": "/auth",
+      "body": {"payload": "1' UNION SELECT 1, 0x757365726E616D65, 0x70617373776F7264 FROM users--"},
+      "content_type": "application/json",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-009",
+      "name": "MySQL @@version substring",
+      "method": "GET",
+      "path": "/login",
+      "query": "pw=' OR SUBSTRING(@@version,1,1)='5'--",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-010",
+      "name": "CASE WHEN injection",
+      "method": "GET",
+      "path": "/products",
+      "query": "cat=electronics' AND (CASE WHEN (1=1) THEN 1 ELSE 0 END)=1--",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-011",
+      "name": "PostgreSQL version() probe",
+      "method": "GET",
+      "path": "/search",
+      "query": "text=rugs'; SELECT version()--",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-012",
+      "name": "CAST-based enumeration",
+      "method": "POST",
+      "path": "/auth",
+      "body": {"condition": "1' AND CAST((SELECT COUNT(*) FROM users) AS INT)>0--"},
+      "content_type": "application/json",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-013",
+      "name": "Comment-string termination",
+      "method": "GET",
+      "path": "/login",
+      "query": "username=admin'/*&password=*/OR/**/1=1--",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-014",
+      "name": "BENCHMARK timing",
+      "method": "GET",
+      "path": "/search",
+      "query": "text=test'; SELECT BENCHMARK(1000000,MD5('test'))--",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-015",
+      "name": "ROW subselect anomaly",
+      "method": "GET",
+      "path": "/user",
+      "query": "id=1 AND ROW(subselect,1)>ALL(SELECT COUNT(*),FLOOR(RAND(0)*2))",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-016",
+      "name": "xp_cmdshell execution",
+      "method": "POST",
+      "path": "/auth",
+      "body": {"payload": "1'; EXEC xp_cmdshell('whoami')--"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-017",
+      "name": "NoSQL MongoDB $ne bypass",
+      "method": "GET",
+      "path": "/search",
+      "query": "text={\"username\":{\"$ne\":null},\"password\":{\"$regex\":\".*\"}}",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SQLI-018",
+      "name": "IS_SRVROLEMEMBER sysadmin probe",
+      "method": "GET",
+      "path": "/search",
+      "query": "text=1'; SELECT IS_SRVROLEMEMBER('sysadmin')--",
+      "severity": "HIGH",
+      "expected": "block"
+    }
+  ]
+}

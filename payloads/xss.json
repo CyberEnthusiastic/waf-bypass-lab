@@ -1,0 +1,118 @@
+{
+  "category": "Cross-Site Scripting",
+  "cwe": "CWE-79",
+  "owasp": "A03:2021 - Injection",
+  "description": "OWASP-documented XSS payloads for WAF bypass testing.",
+  "payloads": [
+    {
+      "id": "XSS-001",
+      "name": "Basic script tag",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=<script>alert(1)</script>",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-002",
+      "name": "Image onerror",
+      "method": "GET",
+      "path": "/profile",
+      "query": "name=<img src=x onerror=alert(1)>",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-003",
+      "name": "SVG onload",
+      "method": "GET",
+      "path": "/comment",
+      "query": "text=<svg onload=alert(1)>",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-004",
+      "name": "JavaScript URI",
+      "method": "GET",
+      "path": "/redirect",
+      "query": "url=javascript:alert(document.cookie)",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-005",
+      "name": "Event handler body",
+      "method": "GET",
+      "path": "/page",
+      "query": "html=<body onload=alert(1)>",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-006",
+      "name": "iframe srcdoc",
+      "method": "POST",
+      "path": "/post",
+      "body": {"content": "<iframe srcdoc='<script>alert(1)</script>'></iframe>"},
+      "content_type": "application/json",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-007",
+      "name": "Double-encoded script",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%3Cscript%3Ealert(1)%3C/script%3E",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-008",
+      "name": "Mixed case evasion",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=<ScRiPt>alert(1)</sCrIpT>",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-009",
+      "name": "HTML entity evasion",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=&lt;script&gt;alert(1)&lt;/script&gt;",
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-010",
+      "name": "Polyglot payload",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=jaVasCript:/*-/*`/*\\`/*'/*\"/**/(/* */oNcliCk=alert() )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\\x3csVg/<sVg/oNloAd=alert()//>\\x3e",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-011",
+      "name": "DOM clobbering",
+      "method": "POST",
+      "path": "/api/post",
+      "body": {"html": "<form name=config><input name=url value='javascript:alert(1)'></form>"},
+      "content_type": "application/json",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "XSS-012",
+      "name": "Expression evasion (older IE)",
+      "method": "GET",
+      "path": "/style",
+      "query": "css=<div style=xss:expression(alert(1))>",
+      "severity": "MEDIUM",
+      "expected": "block"
+    }
+  ]
+}

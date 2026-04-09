@@ -1,0 +1,91 @@
+{
+  "category": "SSRF (Server-Side Request Forgery)",
+  "cwe": "CWE-918",
+  "owasp": "A10:2021 - Server-Side Request Forgery",
+  "description": "SSRF payloads including AWS/GCP cloud metadata probing.",
+  "payloads": [
+    {
+      "id": "SSRF-001",
+      "name": "EC2 metadata service /latest/meta-data/",
+      "method": "GET",
+      "path": "/session",
+      "query": "url=http://169.254.169.254/latest/meta-data/",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SSRF-002",
+      "name": "EC2 user-data endpoint",
+      "method": "GET",
+      "path": "/login",
+      "query": "target=http://169.254.169.254/latest/user-data",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SSRF-003",
+      "name": "EC2 IAM security-credentials",
+      "method": "POST",
+      "path": "/api/fetch",
+      "body": {"url": "http://169.254.169.254/latest/meta-data/iam/security-credentials/"},
+      "content_type": "application/json",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SSRF-004",
+      "name": "ECS task metadata v3",
+      "method": "GET",
+      "path": "/login",
+      "query": "url=http://169.254.170.2/v3/credentials",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SSRF-005",
+      "name": "ECS task metadata v4",
+      "method": "GET",
+      "path": "/session",
+      "query": "target=http://169.254.170.2/v4/credentials",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SSRF-006",
+      "name": "Lambda runtime API",
+      "method": "GET",
+      "path": "/login",
+      "query": "url=http://127.0.0.1:9001/2018-06-01/runtime/invocation/next",
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SSRF-007",
+      "name": "IMDSv2 token request",
+      "method": "GET",
+      "path": "/session",
+      "query": "url=http://169.254.169.254/latest/api/token",
+      "headers": {"X-aws-ec2-metadata-token-ttl-seconds": "21600"},
+      "severity": "CRITICAL",
+      "expected": "block"
+    },
+    {
+      "id": "SSRF-008",
+      "name": "localhost internal probe",
+      "method": "GET",
+      "path": "/proxy",
+      "query": "url=http%3A%2F%2Flocalhost%3A8080%2Fadmin",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SSRF-009",
+      "name": "GCP metadata server",
+      "method": "GET",
+      "path": "/fetch",
+      "query": "url=http://metadata.google.internal/computeMetadata/v1/",
+      "severity": "CRITICAL",
+      "expected": "block"
+    }
+  ]
+}

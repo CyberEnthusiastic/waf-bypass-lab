@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "charliermarsh.ruff",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "redhat.vscode-yaml",
+    "ms-azuretools.vscode-docker",
+    "yzhang.markdown-all-in-one",
+    "streetsidesoftware.code-spell-checker"
+  ],
+  "unwantedRecommendations": []
+}

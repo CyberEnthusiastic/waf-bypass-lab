@@ -1,0 +1,2 @@
+# WAF Bypass Lab has zero runtime dependencies.
+# Uses only Python 3.8+ stdlib: urllib, ssl, json, argparse, dataclasses, pathlib.

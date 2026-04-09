@@ -1,0 +1,163 @@
+{
+  "category": "Scanner / Attack Tool Detection",
+  "cwe": "CWE-200",
+  "owasp": "Reconnaissance",
+  "description": "User-Agent and header signatures of known scanners and pentesting tools. A properly configured WAF should block these on sight.",
+  "payloads": [
+    {
+      "id": "SCAN-001",
+      "name": "sqlmap",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "sqlmap/1.6.4#stable (http://sqlmap.org)"},
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-002",
+      "name": "Nmap Scripting Engine",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-003",
+      "name": "Nikto",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "Nikto/2.1.6"},
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-004",
+      "name": "Havij SQLi tool",
+      "method": "GET",
+      "path": "/products",
+      "query": "id=1",
+      "headers": {"User-Agent": "havij"},
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-005",
+      "name": "DirBuster",
+      "method": "GET",
+      "path": "/backup/",
+      "headers": {"User-Agent": "DirBuster-1.0-RC1"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-006",
+      "name": "Arachni",
+      "method": "GET",
+      "path": "/cgi-bin/test.cgi",
+      "headers": {"User-Agent": "Arachni/v1.5.1"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-007",
+      "name": "WPScan",
+      "method": "GET",
+      "path": "/wp-admin/",
+      "headers": {"User-Agent": "WPScan v3.8.7"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-008",
+      "name": "w3af",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "w3af.org"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-009",
+      "name": "gobuster",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "gobuster/3.1.0"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-010",
+      "name": "Burp Suite Pro",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "Burp Suite Professional"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-011",
+      "name": "Metasploit HTTP client",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "Mozilla/4.0 (compatible; MSIE 6.0; MetasploitHttpClient)"},
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-012",
+      "name": "OWASP ZAP",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "OWASP ZAP 2.10.0"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-013",
+      "name": "Acunetix header",
+      "method": "GET",
+      "path": "/login",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Acunetix-Product": "WVS/13.0.20180305",
+        "Acunetix-Referrer": "http://www.acunetix.com/"
+      },
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-014",
+      "name": "X-Scanner custom header",
+      "method": "GET",
+      "path": "/login",
+      "headers": {"X-Scanner": "CustomSecurityTool/2.1"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-015",
+      "name": "Nessus fingerprint probe path",
+      "method": "GET",
+      "path": "/nessus_is_probing_you_12345",
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-016",
+      "name": "Acunetix test file path",
+      "method": "GET",
+      "path": "/acunetix-wvs-test-for-some-inexistent-file",
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "SCAN-017",
+      "name": "w00tw00t ISC SANS signature",
+      "method": "GET",
+      "path": "/w00tw00t.at.isc.sans.dfind",
+      "severity": "MEDIUM",
+      "expected": "block"
+    }
+  ]
+}

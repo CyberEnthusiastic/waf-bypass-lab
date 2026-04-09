@@ -1,0 +1,79 @@
+{
+  "category": "Web Protocol Attack",
+  "cwe": "CWE-444",
+  "owasp": "A05:2021 - Security Misconfiguration",
+  "description": "HTTP protocol-level attacks: request smuggling, response splitting, header confusion.",
+  "payloads": [
+    {
+      "id": "WPA-001",
+      "name": "HTTP Response Splitting (CR/LF in URL)",
+      "method": "GET",
+      "path": "/redirect",
+      "query": "url=http%3A%2F%2Ftest.example.com%0D%0ASet-Cookie%3A%20evil%3D1",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "WPA-002",
+      "name": "Invalid Transfer-Encoding (desync)",
+      "method": "POST",
+      "path": "/api/process",
+      "headers": {"Transfer-Encoding": "chunked, identity, gzip", "Content-Type": "application/json"},
+      "body": {"data": "desync_test"},
+      "content_type": "application/json",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "WPA-003",
+      "name": "Unicode full/half-width evasion",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%EF%BC%9C%EF%BD%93%EF%BD%83%EF%BD%92%EF%BD%89%EF%BD%90%EF%BD%94%EF%BC%9E",
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "WPA-004",
+      "name": "HEAD with body",
+      "method": "HEAD",
+      "path": "/login",
+      "headers": {"Content-Type": "application/json", "Content-Length": "45"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "WPA-005",
+      "name": "Invalid Range header (huge)",
+      "method": "GET",
+      "path": "/login",
+      "headers": {"Range": "bytes=0-99999999999999999999999999999999"},
+      "severity": "MEDIUM",
+      "expected": "block"
+    },
+    {
+      "id": "WPA-006",
+      "name": "Hop-by-hop header abuse",
+      "method": "GET",
+      "path": "/proxy/internal",
+      "headers": {
+        "Connection": "keep-alive, X-Forwarded-For",
+        "Proxy-Connection": "keep-alive",
+        "X-Forwarded-For": "127.0.0.1"
+      },
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "WPA-007",
+      "name": "Multiple Content-Encoding",
+      "method": "POST",
+      "path": "/api/submit",
+      "headers": {"Content-Type": "application/json"},
+      "body": {"test": "multi_encoding"},
+      "content_type": "application/json",
+      "severity": "MEDIUM",
+      "expected": "block"
+    }
+  ]
+}

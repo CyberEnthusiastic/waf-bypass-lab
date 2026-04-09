@@ -1,0 +1,69 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Mock target: run full suite",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/waf_lab.py",
+      "args": ["http://127.0.0.1:8088", "--i-am-authorized-to-test", "--delay-ms", "20"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Mock target: start server",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/mock_target.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Dry run (load payloads only)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/waf_lab.py",
+      "args": ["http://localhost", "--dry-run"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Custom target (prompt)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/waf_lab.py",
+      "args": ["${input:targetUrl}", "--i-am-authorized-to-test"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Single category (prompt)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/waf_lab.py",
+      "args": ["${input:targetUrl}", "--i-am-authorized-to-test", "-c", "${input:category}"],
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "targetUrl",
+      "type": "promptString",
+      "description": "Target URL (you must have written authorization)",
+      "default": "http://127.0.0.1:8088"
+    },
+    {
+      "id": "category",
+      "type": "pickString",
+      "description": "Which payload category?",
+      "options": [
+        "SQL Injection",
+        "Cross-Site Scripting",
+        "Log4Shell (CVE-2021-44228)",
+        "LFI / Path Traversal",
+        "Remote File Inclusion",
+        "Command Injection",
+        "SSRF (Server-Side Request Forgery)",
+        "Scanner / Attack Tool Detection",
+        "Web Protocol Attack"
+      ]
+    }
+  ]
+}

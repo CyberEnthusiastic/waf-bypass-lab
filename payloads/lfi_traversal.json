@@ -1,0 +1,127 @@
+{
+  "category": "LFI / Path Traversal",
+  "cwe": "CWE-22 / CWE-98",
+  "owasp": "A01:2021 - Broken Access Control",
+  "description": "Local file inclusion and directory traversal payloads.",
+  "payloads": [
+    {
+      "id": "LFI-001",
+      "name": "Basic ../ traversal to /etc/passwd",
+      "method": "GET",
+      "path": "/session",
+      "query": "file=..%2F..%2F..%2Fetc%2Fpasswd",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-002",
+      "name": "Windows traversal to SAM",
+      "method": "GET",
+      "path": "/search",
+      "query": "path=..%5C..%5C..%5Cwindows%5Csystem32%5Cconfig%5CSAM",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-003",
+      "name": "URL-encoded dots",
+      "method": "GET",
+      "path": "/file",
+      "query": "name=%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-004",
+      "name": "Double URL-encoded",
+      "method": "GET",
+      "path": "/read",
+      "query": "file=%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-005",
+      "name": "Null byte bypass",
+      "method": "GET",
+      "path": "/include",
+      "query": "page=..%2F..%2F..%2Fetc%2Fpasswd%00",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-006",
+      "name": "Path traversal in POST body",
+      "method": "POST",
+      "path": "/api/readfile",
+      "body": {"filename": "../../../../etc/shadow"},
+      "content_type": "application/json",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-007",
+      "name": "file:// protocol",
+      "method": "GET",
+      "path": "/load",
+      "query": "url=file%3A%2F%2F%2Fetc%2Fpasswd",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-008",
+      "name": "php://filter base64 wrapper",
+      "method": "GET",
+      "path": "/include",
+      "query": "file=php%3A%2F%2Ffilter%2Fread%3Dconvert.base64-encode%2Fresource%3D..%2F..%2F..%2Fetc%2Fpasswd",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-009",
+      "name": "proc/self/environ",
+      "method": "GET",
+      "path": "/logs",
+      "query": "logfile=..%2F..%2F..%2F..%2Fproc%2Fself%2Fenviron",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-010",
+      "name": "Traversal in cookie header",
+      "method": "GET",
+      "path": "/session",
+      "headers": {"Cookie": "JSESSIONID=..%252f..%252f..%252fetc%252fpasswd"},
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-011",
+      "name": "Traversal in User-Agent",
+      "method": "GET",
+      "path": "/",
+      "headers": {"User-Agent": "..%2f..%2f..%2f..%2f..%2fetc%2fpasswd%00"},
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-012",
+      "name": "Mixed-case drive traversal",
+      "method": "GET",
+      "path": "/get",
+      "query": "path=..%5c..%5c..%5cetc%5cpasswd",
+      "severity": "HIGH",
+      "expected": "block"
+    },
+    {
+      "id": "LFI-013",
+      "name": "Unicode / UTF-8 overlong",
+      "method": "POST",
+      "path": "/api/read",
+      "body": {"payload": "..%c0%af..%c0%af..%c0%afetc/passwd"},
+      "content_type": "application/json",
+      "severity": "HIGH",
+      "expected": "block"
+    }
+  ]
+}
