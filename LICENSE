@@ -1,26 +1,41 @@
-MIT License
+PROPRIETARY LICENSE
 
-Copyright (c) 2026 Adithya Vasamsetti (CyberEnthusiastic)
+Copyright (c) 2026 Mohith (Adithya) Vasamsetti. All rights reserved.
+GitHub: https://github.com/CyberEnthusiastic
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+GRANT OF LICENSE:
+You are granted a limited, non-exclusive, non-transferable license to:
+  1. View and read the source code for personal educational purposes.
+  2. Clone and run the software locally on machines YOU personally own.
+  3. Submit pull requests back to the original repository.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+RESTRICTIONS — you may NOT:
+  1. Copy, redistribute, or republish any portion of this code.
+  2. Use this code in commercial products, services, or SaaS offerings.
+  3. Fork this repository and rebrand it as your own work.
+  4. Remove, alter, or obscure this copyright notice or any attribution.
+  5. Use this code to train AI/ML models without written permission.
+  6. Create derivative works for public distribution.
+  7. Sell, sublicense, or transfer access to this code.
 
-Attribution: This project was originally authored by Adithya Vasamsetti
-(GitHub: https://github.com/CyberEnthusiastic) as part of the AI Security
-Projects series. If you fork, modify, or redistribute this software, please
-preserve the original copyright notice and link back to the source repository.
+ATTRIBUTION:
+If you reference this project in academic work, blog posts, or presentations,
+you MUST credit the original author with a link to the source repository.
 
+COMMERCIAL USE:
+For commercial licensing, enterprise deployment, or bulk access, contact:
+  Email: vmna56@gmail.com
+  LinkedIn: https://linkedin.com/in/mohithvasamsetti
+
+ENFORCEMENT:
+Unauthorized copying or distribution of this software will be pursued under
+applicable copyright law including the Digital Millennium Copyright Act (DMCA).
+The author reserves the right to file DMCA takedown notices against any
+unauthorized copies found on GitHub, GitLab, Bitbucket, or any other platform.
+
+WARRANTY DISCLAIMER:
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+For permissions beyond the scope of this license, contact the author.
