@@ -1,0 +1,29 @@
+{
+  "updated_at": "2026-04-10T07:29:31.713994+00:00",
+  "daily_tip": "Encrypt data at rest AND in transit \u2014 encryption at rest alone is not enough.",
+  "tip_number": 8,
+  "cisa_kev_count": 1559,
+  "recent_cves": [
+    {
+      "id": "CVE-2026-5814",
+      "description": "A security vulnerability has been detected in PHPGurukul Online Course Registration 3.1. This issue affects some unknown processing of the file /admin/check_availability.php. The manipulation of the a"
+    },
+    {
+      "id": "CVE-2026-5815",
+      "description": "A vulnerability was detected in D-Link DIR-645 1.01/1.02/1.03. Impacted is the function hedwigcgi_main of the file /cgi-bin/hedwig.cgi. The manipulation results in stack-based buffer overflow. The att"
+    },
+    {
+      "id": "CVE-2026-5823",
+      "description": "A weakness has been identified in itsourcecode Construction Management System 1.0. Affected by this issue is some unknown functionality of the file /borrowed_tool_report.php. This manipulation of the "
+    },
+    {
+      "id": "CVE-2026-5824",
+      "description": "A security vulnerability has been detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /userchecklogin.php. Such manipulation of the argument userid leads to s"
+    },
+    {
+      "id": "CVE-2026-5825",
+      "description": "A vulnerability was detected in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /delmemberinfo.php. Performing a manipulation of the argument userid result"
+    }
+  ],
+  "new_kev_today": []
+}
