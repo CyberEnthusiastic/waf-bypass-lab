@@ -7,7 +7,7 @@ FROM python:3.12-slim-bookworm
 LABEL org.opencontainers.image.title="AI Security Projects"
 LABEL org.opencontainers.image.source="https://github.com/CyberEnthusiastic"
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.authors="Adithya Vasamsetti <CyberEnthusiastic>"
+LABEL org.opencontainers.image.authors="Mohith Vasamsetti <CyberEnthusiastic>"
 
 # Create non-root user
 RUN groupadd -r sec && useradd -r -g sec -m -d /home/sec sec

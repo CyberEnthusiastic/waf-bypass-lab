@@ -15,9 +15,9 @@ import hashlib
 import sys
 from pathlib import Path
 
-AUTHOR = "Mohith (Adithya) Vasamsetti"
+AUTHOR = "Mohith Vasamsetti"
 GITHUB = "https://github.com/CyberEnthusiastic"
-COPYRIGHT_MARKER = "Copyright (c) 2026 Mohith (Adithya) Vasamsetti"
+COPYRIGHT_MARKER = "Copyright (c) 2026 Mohith Vasamsetti"
 LICENSE_REQUIRED_PHRASES = [
     "All rights reserved",
     "CyberEnthusiastic",

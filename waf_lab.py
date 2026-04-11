@@ -15,7 +15,7 @@ acknowledging that you have explicit written permission to test the target.
 Inspired by the Akamai/Fastly Hurl test patterns used by large-scale
 e-commerce security teams to validate WAF coverage in production.
 
-Author: Adithya Vasamsetti (CyberEnthusiastic)
+Author: Mohith Vasamsetti (CyberEnthusiastic)
 License: MIT
 """
 import argparse
