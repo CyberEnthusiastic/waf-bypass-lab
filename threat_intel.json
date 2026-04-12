@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-04-11T16:37:29.543295+00:00",
-  "daily_tip": "Conduct tabletop exercises quarterly \u2014 IR plans rot without practice.",
-  "tip_number": 9,
+  "updated_at": "2026-04-12T18:56:45.155426+00:00",
+  "daily_tip": "Audit third-party OAuth scopes \u2014 overly broad permissions are attack surface.",
+  "tip_number": 10,
   "cisa_kev_count": 1559,
   "recent_cves": [
     {
-      "id": "CVE-2026-5392",
-      "description": "Heap out-of-bounds read in PKCS7 parsing. A crafted PKCS7 message can trigger an OOB read on the heap. The missing bounds check is in the indefinite-length end-of-content verification loop in PKCS7_Ve"
+      "id": "CVE-2026-3689",
+      "description": "OpenClaw Canvas Path Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of OpenClaw. Authentication "
     },
     {
-      "id": "CVE-2026-5393",
-      "description": "Dual-Algorithm CertificateVerify out-of-bounds read. When processing a dual-algorithm CertificateVerify message, an out-of-bounds read can occur on crafted input. This can only occur when --enable-exp"
+      "id": "CVE-2026-3690",
+      "description": "OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of OpenClaw. Authentication is not required to exploi"
     },
     {
-      "id": "CVE-2026-5448",
-      "description": "X.509 date buffer overflow in wolfSSL_X509_notAfter / wolfSSL_X509_notBefore. A buffer overflow may occur when parsing date fields from a crafted X.509 certificate via the compatibility layer API. Thi"
+      "id": "CVE-2026-3691",
+      "description": "OpenClaw Client PKCE Verifier Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose stored credentials on affected installations of OpenClaw. User interaction is"
     },
     {
-      "id": "CVE-2026-5460",
-      "description": "A heap use-after-free exists in wolfSSL's TLS 1.3 post-quantum cryptography (PQC) hybrid KeyShare processing. In the error handling path of TLSX_KeyShare_ProcessPqcHybridClient() in src/tls.c, the inn"
+      "id": "CVE-2026-40354",
+      "description": "Flatpak xdg-desktop-portal before 1.20.4 and 1.21.x before 1.21.1 allows any Flatpak app to trash any file in the host context via a symlink attack on g_file_trash."
     },
     {
-      "id": "CVE-2026-5989",
-      "description": "A flaw has been found in Tenda F451 1.0.0.7. Affected is the function fromRouteStatic of the file /goform/RouteStatic. Executing a manipulation of the argument page can lead to stack-based buffer over"
+      "id": "CVE-2026-4149",
+      "description": "Sonos Era 300 SMB Response Out-Of-Bounds Access Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Sonos Era 300. Au"
     }
   ],
   "new_kev_today": []
