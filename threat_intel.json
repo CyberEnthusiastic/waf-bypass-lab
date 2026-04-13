@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-04-12T19:09:50.536049+00:00",
-  "daily_tip": "Audit third-party OAuth scopes \u2014 overly broad permissions are attack surface.",
-  "tip_number": 10,
+  "updated_at": "2026-04-13T14:07:48.858557+00:00",
+  "daily_tip": "Disable dormant accounts after 90 days \u2014 they are free attack surface.",
+  "tip_number": 11,
   "cisa_kev_count": 1559,
   "recent_cves": [
     {
-      "id": "CVE-2026-3689",
-      "description": "OpenClaw Canvas Path Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of OpenClaw. Authentication "
+      "id": "CVE-2026-6107",
+      "description": "A flaw has been found in 1Panel-dev MaxKB up to 2.6.1. This issue affects some unknown processing of the file apps/common/middleware/chat_headers_middleware.py of the component ChatHeadersMiddleware. "
     },
     {
-      "id": "CVE-2026-3690",
-      "description": "OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of OpenClaw. Authentication is not required to exploi"
+      "id": "CVE-2026-6108",
+      "description": "A vulnerability was found in 1Panel-dev MaxKB up to 2.6.1. The affected element is the function execute of the file apps/application/flow/step_node/mcp_node/impl/base_mcp_node.py of the component Mode"
     },
     {
-      "id": "CVE-2026-3691",
-      "description": "OpenClaw Client PKCE Verifier Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose stored credentials on affected installations of OpenClaw. User interaction is"
+      "id": "CVE-2026-6109",
+      "description": "A vulnerability was determined in FoundationAgents MetaGPT up to 0.8.1. The impacted element is the function evaluateCode of the file metagpt/environment/minecraft/mineflayer/index.js of the component"
     },
     {
-      "id": "CVE-2026-40354",
-      "description": "Flatpak xdg-desktop-portal before 1.20.4 and 1.21.x before 1.21.1 allows any Flatpak app to trash any file in the host context via a symlink attack on g_file_trash."
+      "id": "CVE-2026-1116",
+      "description": "A Cross-site Scripting (XSS) vulnerability was identified in the `from_dict` method of the `AppLollmsMessage` class in parisneo/lollms prior to version 2.2.0. The vulnerability arises from the lack of"
     },
     {
-      "id": "CVE-2026-4149",
-      "description": "Sonos Era 300 SMB Response Out-Of-Bounds Access Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Sonos Era 300. Au"
+      "id": "CVE-2026-6110",
+      "description": "A vulnerability was identified in FoundationAgents MetaGPT up to 0.8.1. This affects the function generate_thoughts of the file metagpt/strategy/tot.py of the component Tree-of-Thought Solver. The man"
     }
   ],
   "new_kev_today": []
