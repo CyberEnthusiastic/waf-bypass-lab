@@ -1,29 +1,60 @@
 {
-  "updated_at": "2026-04-13T14:07:48.858557+00:00",
-  "daily_tip": "Disable dormant accounts after 90 days \u2014 they are free attack surface.",
-  "tip_number": 11,
-  "cisa_kev_count": 1559,
+  "updated_at": "2026-04-14T15:46:05.963767+00:00",
+  "daily_tip": "Use parameterized queries everywhere \u2014 SQLi is still the #1 web vuln.",
+  "tip_number": 12,
+  "cisa_kev_count": 1566,
   "recent_cves": [
     {
-      "id": "CVE-2026-6107",
-      "description": "A flaw has been found in 1Panel-dev MaxKB up to 2.6.1. This issue affects some unknown processing of the file apps/common/middleware/chat_headers_middleware.py of the component ChatHeadersMiddleware. "
+      "id": "CVE-2026-6135",
+      "description": "A weakness has been identified in Tenda F451 1.0.0.7_cn_svn7958. This issue affects the function fromSetIpBind of the file /goform/SetIpBind. Executing a manipulation of the argument page can lead to "
     },
     {
-      "id": "CVE-2026-6108",
-      "description": "A vulnerability was found in 1Panel-dev MaxKB up to 2.6.1. The affected element is the function execute of the file apps/application/flow/step_node/mcp_node/impl/base_mcp_node.py of the component Mode"
+      "id": "CVE-2026-6136",
+      "description": "A security vulnerability has been detected in Tenda F451 1.0.0.7_cn_svn7958. Impacted is the function frmL7ImForm of the file /goform/L7Im. The manipulation of the argument page leads to stack-based b"
     },
     {
-      "id": "CVE-2026-6109",
-      "description": "A vulnerability was determined in FoundationAgents MetaGPT up to 0.8.1. The impacted element is the function evaluateCode of the file metagpt/environment/minecraft/mineflayer/index.js of the component"
+      "id": "CVE-2026-6137",
+      "description": "A vulnerability was detected in Tenda F451 1.0.0.7_cn_svn7958. The affected element is the function fromAdvSetWan of the file /goform/AdvSetWan. The manipulation of the argument wanmode/PPPOEPassword "
     },
     {
-      "id": "CVE-2026-1116",
-      "description": "A Cross-site Scripting (XSS) vulnerability was identified in the `from_dict` method of the `AppLollmsMessage` class in parisneo/lollms prior to version 2.2.0. The vulnerability arises from the lack of"
+      "id": "CVE-2026-6138",
+      "description": "A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. The impacted element is the function setAccessDeviceCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation"
     },
     {
-      "id": "CVE-2026-6110",
-      "description": "A vulnerability was identified in FoundationAgents MetaGPT up to 0.8.1. This affects the function generate_thoughts of the file metagpt/strategy/tot.py of the component Tree-of-Thought Solver. The man"
+      "id": "CVE-2026-25204",
+      "description": "Deserialization of untrusted data vulnerability in Samsung Open Source Escargot Java Script allows denial of service condition via process abort.\n\nThis issue affects escarogt prior to\u00a0commit hash \n\n97"
     }
   ],
-  "new_kev_today": []
+  "new_kev_today": [
+    {
+      "cve": "CVE-2012-1854",
+      "vendor": "Microsoft",
+      "product": "Visual Basic for Applications (VBA)",
+      "name": "Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability"
+    },
+    {
+      "cve": "CVE-2025-60710",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "name": "Microsoft Windows Link Following Vulnerability"
+    },
+    {
+      "cve": "CVE-2023-21529",
+      "vendor": "Microsoft",
+      "product": "Exchange Server",
+      "name": "Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability"
+    },
+    {
+      "cve": "CVE-2023-36424",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "name": "Microsoft Windows Out-of-Bounds Read Vulnerability"
+    },
+    {
+      "cve": "CVE-2020-9715",
+      "vendor": "Adobe",
+      "product": "Acrobat",
+      "name": "Adobe Acrobat Use-After-Free Vulnerability"
+    }
+  ]
 }
