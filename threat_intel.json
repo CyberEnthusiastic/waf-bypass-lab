@@ -1,42 +1,29 @@
 {
-  "updated_at": "2026-04-15T16:08:28.006925+00:00",
-  "daily_tip": "Pin your Docker base images to digest \u2014 tag-based pulls can be poisoned.",
-  "tip_number": 13,
+  "updated_at": "2026-04-16T15:21:58.509825+00:00",
+  "daily_tip": "Enable VPC flow logs \u2014 they are cheap insurance for forensics.",
+  "tip_number": 14,
   "cisa_kev_count": 1568,
   "recent_cves": [
     {
-      "id": "CVE-2026-0512",
-      "description": "Due to a Cross-Site Scripting (XSS) vulnerability in the SAP Supplier Relationship Management (SICF Handler in SRM Catalog), an unauthenticated attacker could craft a malicious URL, that if accessed b"
+      "id": "CVE-2025-15470",
+      "description": "The Eleganzo theme for WordPress is vulnerable to arbitrary directory deletion due to insufficient path validation in the akd_required_plugin_callback function in all versions up to, and including, 1."
     },
     {
-      "id": "CVE-2026-24318",
-      "description": "Due to an Insecure session management vulnerability in SAP Business Objects Business Intelligence Platform, an unauthenticated attacker could obtain valid session tokens and reuse them to gain unautho"
+      "id": "CVE-2025-54550",
+      "description": "The example example_xcom\u00a0that was included in airflow documentation implemented unsafe pattern of reading value\nfrom xcom in the way that could be exploited to allow UI user who had access to modify X"
     },
     {
-      "id": "CVE-2026-27672",
-      "description": "The Material Master application does not enforce authorization checks for authenticated users when executing reports, resulting in the disclosure of sensitive information. This vulnerability has a low"
+      "id": "CVE-2026-1314",
+      "description": "The 3D FlipBook \u2013 PDF Embedder, PDF Flipbook Viewer, Flipbook Image Gallery plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the send_post_pages_j"
     },
     {
-      "id": "CVE-2026-27673",
-      "description": "Due to a missing authorization check, SAP S/4HANA (Private Cloud and On-Premise) allows an authenticated user to delete files on the operating system and gain unauthorized control over file operations"
+      "id": "CVE-2026-1509",
+      "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to Arbitrary WordPress Action Execution in all versions up to, and including, 3.15.1. This is due to the plugin's `output_action_hook()` f"
     },
     {
-      "id": "CVE-2026-27674",
-      "description": "Due to a Code Injection vulnerability in SAP NetWeaver Application Server Java (Web Dynpro Java), an unauthenticated attacker could supply crafted input that is interpreted by the application and caus"
+      "id": "CVE-2026-1541",
+      "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.15.1. This is due to the plugin's `fusion_get_post_custom_field("
     }
   ],
-  "new_kev_today": [
-    {
-      "cve": "CVE-2009-0238",
-      "vendor": "Microsoft",
-      "product": "Office",
-      "name": "Microsoft Office Remote Code Execution"
-    },
-    {
-      "cve": "CVE-2026-32201",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "name": "Microsoft SharePoint Server Improper Input Validation Vulnerability"
-    }
-  ]
+  "new_kev_today": []
 }
