@@ -1,29 +1,36 @@
 {
-  "updated_at": "2026-04-16T15:21:58.509825+00:00",
-  "daily_tip": "Enable VPC flow logs \u2014 they are cheap insurance for forensics.",
-  "tip_number": 14,
-  "cisa_kev_count": 1568,
+  "updated_at": "2026-04-17T14:52:45.160632+00:00",
+  "daily_tip": "Review your S3 bucket policies weekly \u2014 public buckets cause breaches.",
+  "tip_number": 15,
+  "cisa_kev_count": 1569,
   "recent_cves": [
     {
-      "id": "CVE-2025-15470",
-      "description": "The Eleganzo theme for WordPress is vulnerable to arbitrary directory deletion due to insufficient path validation in the akd_required_plugin_callback function in all versions up to, and including, 1."
+      "id": "CVE-2026-40193",
+      "description": "maddy is a composable, all-in-one mail server. Versions prior to 0.9.3 contain an LDAP injection vulnerability in the auth.ldap module where user-supplied usernames are interpolated into LDAP search f"
     },
     {
-      "id": "CVE-2025-54550",
-      "description": "The example example_xcom\u00a0that was included in airflow documentation implemented unsafe pattern of reading value\nfrom xcom in the way that could be exploited to allow UI user who had access to modify X"
+      "id": "CVE-2026-40245",
+      "description": "Free5GC is an open-source Linux Foundation project for 5th generation (5G) mobile core networks. Versions 4.2.1 and below contain an information disclosure vulnerability in the UDR (Unified Data Repos"
     },
     {
-      "id": "CVE-2026-1314",
-      "description": "The 3D FlipBook \u2013 PDF Embedder, PDF Flipbook Viewer, Flipbook Image Gallery plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the send_post_pages_j"
+      "id": "CVE-2026-40947",
+      "description": "Yubico libfido2 before 1.17.0, python-fido2 before 2.2.0, and yubikey-manager before 5.9.1 have an unintended DLL search path."
     },
     {
-      "id": "CVE-2026-1509",
-      "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to Arbitrary WordPress Action Execution in all versions up to, and including, 3.15.1. This is due to the plugin's `output_action_hook()` f"
+      "id": "CVE-2026-4880",
+      "description": "The Barcode Scanner (+Mobile App) \u2013 Inventory manager, Order fulfillment system, POS (Point of Sale) plugin for WordPress is vulnerable to privilege escalation via insecure token-based authentication "
     },
     {
-      "id": "CVE-2026-1541",
-      "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.15.1. This is due to the plugin's `fusion_get_post_custom_field("
+      "id": "CVE-2026-5363",
+      "description": "Inadequate Encryption Strength vulnerability in TP-Link Archer C7 v5 and v5.8 (uhttpd modules) allows Password Recovery Exploitation.\u00a0The web interface encrypts the admin password client-side using RS"
     }
   ],
-  "new_kev_today": []
+  "new_kev_today": [
+    {
+      "cve": "CVE-2026-34197",
+      "vendor": "Apache",
+      "product": "ActiveMQ",
+      "name": "Apache ActiveMQ Improper Input Validation Vulnerability"
+    }
+  ]
 }
