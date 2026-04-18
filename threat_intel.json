@@ -1,36 +1,29 @@
 {
-  "updated_at": "2026-04-17T14:52:45.160632+00:00",
-  "daily_tip": "Review your S3 bucket policies weekly \u2014 public buckets cause breaches.",
-  "tip_number": 15,
+  "updated_at": "2026-04-18T06:14:21.622229+00:00",
+  "daily_tip": "Use SBOM generation in CI/CD \u2014 know what you ship before you ship it.",
+  "tip_number": 16,
   "cisa_kev_count": 1569,
   "recent_cves": [
     {
-      "id": "CVE-2026-40193",
-      "description": "maddy is a composable, all-in-one mail server. Versions prior to 0.9.3 contain an LDAP injection vulnerability in the auth.ldap module where user-supplied usernames are interpolated into LDAP search f"
+      "id": "CVE-2026-22734",
+      "description": "Cloud Foundry UUA is\u00a0vulnerable to a bypass that allows an attacker to obtain a token for any user and gain access to UAA-protected systems. This vulnerability exists when SAML 2.0 bearer assertions a"
     },
     {
-      "id": "CVE-2026-40245",
-      "description": "Free5GC is an open-source Linux Foundation project for 5th generation (5G) mobile core networks. Versions 4.2.1 and below contain an information disclosure vulnerability in the UDR (Unified Data Repos"
+      "id": "CVE-2026-40260",
+      "description": "pypdf is a free and open-source pure-python PDF library. In versions prior to 6.10.0, manipulated XMP metadata entity declarations can exhaust RAM. An attacker who exploits this vulnerability can craf"
     },
     {
-      "id": "CVE-2026-40947",
-      "description": "Yubico libfido2 before 1.17.0, python-fido2 before 2.2.0, and yubikey-manager before 5.9.1 have an unintended DLL search path."
+      "id": "CVE-2026-40262",
+      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset delivery handler serves uploaded files inline and relies on magic-byte detection for content type, which do"
     },
     {
-      "id": "CVE-2026-4880",
-      "description": "The Barcode Scanner (+Mobile App) \u2013 Inventory manager, Order fulfillment system, POS (Point of Sale) plugin for WordPress is vulnerable to privilege escalation via insecure token-based authentication "
+      "id": "CVE-2026-40263",
+      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the login endpoint performs bcrypt password verification only when the supplied username exists, returning immediatel"
     },
     {
-      "id": "CVE-2026-5363",
-      "description": "Inadequate Encryption Strength vulnerability in TP-Link Archer C7 v5 and v5.8 (uhttpd modules) allows Password Recovery Exploitation.\u00a0The web interface encrypts the admin password client-side using RS"
+      "id": "CVE-2026-40265",
+      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset download endpoint at /api/notes/{noteID}/assets/{assetID} is registered without authentication middleware, "
     }
   ],
-  "new_kev_today": [
-    {
-      "cve": "CVE-2026-34197",
-      "vendor": "Apache",
-      "product": "ActiveMQ",
-      "name": "Apache ActiveMQ Improper Input Validation Vulnerability"
-    }
-  ]
+  "new_kev_today": []
 }
