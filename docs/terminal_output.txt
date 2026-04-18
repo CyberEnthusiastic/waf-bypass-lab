@@ -1,0 +1,144 @@
+
+  WAF Bypass Lab v1.0
+  Copyright (c) 2026 Mohith Vasamsetti
+  https://github.com/CyberEnthusiastic
+  Licensed for personal use only. See LICENSE for terms.
+
+
+============================================================
+   WAF BYPASS LAB  v1.0
+   Defensive WAF coverage assessment
+   github.com/CyberEnthusiastic
+============================================================
+
+[*] Loaded 105 payloads
+[*] Target : http://127.0.0.1:8088
+[*] Delay  : 200ms between requests
+[*] Timeout: 10s
+
+  [  1/105] [92mBLOCKED [0m 403   CMD-001    Unix semicolon separator
+  [  2/105] [92mBLOCKED [0m 403   CMD-002    Windows ampersand separator
+  [  3/105] [92mBLOCKED [0m 403   CMD-003    Pipe separator in POST body
+  [  4/105] [92mBLOCKED [0m 403   CMD-004    Backtick substitution
+  [  5/105] [92mBLOCKED [0m 403   CMD-005    Dollar-paren substitution
+  [  6/105] [91mALLOWED [0m 200   CMD-006    PowerShell pipe
+  [  7/105] [92mBLOCKED [0m 403   CMD-007    && command chaining in body
+  [  8/105] [92mBLOCKED [0m 403   CMD-008    || fallback chaining
+  [  9/105] [92mBLOCKED [0m 403   CMD-009    Base64-encoded command
+  [ 10/105] [92mBLOCKED [0m 403   CMD-010    Null byte + line feed
+  [ 11/105] [92mBLOCKED [0m 403   CMD-011    Obfuscated PowerShell
+  [ 12/105] [92mBLOCKED [0m 403   CMD-012    Cmd injection via User-Agent
+  [ 13/105] [92mBLOCKED [0m 403   LFI-001    Basic ../ traversal to /etc/passwd
+  [ 14/105] [92mBLOCKED [0m 403   LFI-002    Windows traversal to SAM
+  [ 15/105] [92mBLOCKED [0m 403   LFI-003    URL-encoded dots
+  [ 16/105] [92mBLOCKED [0m 403   LFI-004    Double URL-encoded
+  [ 17/105] [92mBLOCKED [0m 403   LFI-005    Null byte bypass
+  [ 18/105] [92mBLOCKED [0m 403   LFI-006    Path traversal in POST body
+  [ 19/105] [92mBLOCKED [0m 403   LFI-007    file:// protocol
+  [ 20/105] [92mBLOCKED [0m 403   LFI-008    php://filter base64 wrapper
+  [ 21/105] [92mBLOCKED [0m 403   LFI-009    proc/self/environ
+  [ 22/105] [91mALLOWED [0m 200   LFI-010    Traversal in cookie header
+  [ 23/105] [91mALLOWED [0m 200   LFI-011    Traversal in User-Agent
+  [ 24/105] [92mBLOCKED [0m 403   LFI-012    Mixed-case drive traversal
+  [ 25/105] [92mBLOCKED [0m 403   LFI-013    Unicode / UTF-8 overlong
+  [ 26/105] [92mBLOCKED [0m 403   LOG4J-001  Basic JNDI LDAP lookup
+  [ 27/105] [92mBLOCKED [0m 403   LOG4J-002  JNDI DNS lookup (POST body)
+  [ 28/105] [92mBLOCKED [0m 403   LOG4J-003  JNDI RMI protocol
+  [ 29/105] [92mBLOCKED [0m 403   LOG4J-004  JNDI CORBA protocol
+  [ 30/105] [92mBLOCKED [0m 403   LOG4J-005  Log4Shell in User-Agent header
+  [ 31/105] [92mBLOCKED [0m 403   LOG4J-006  Log4Shell in X-Forwarded-For header
+  [ 32/105] [92mBLOCKED [0m 403   LOG4J-007  Case-flipped obfuscation
+  [ 33/105] [92mBLOCKED [0m 403   LOG4J-008  Nested env var lookup
+  [ 34/105] [92mBLOCKED [0m 403   LOG4J-009  AWS_PROFILE enumeration probe
+  [ 35/105] [92mBLOCKED [0m 403   LOG4J-010  URL-encoded JNDI
+  [ 36/105] [92mBLOCKED [0m 403   LOG4J-011  Double-encoded JNDI
+  [ 37/105] [92mBLOCKED [0m 403   RFI-001    Basic PHP RFI via http://
+  [ 38/105] [92mBLOCKED [0m 403   RFI-002    Data stream wrapper (base64)
+  [ 39/105] [92mBLOCKED [0m 403   RFI-003    FTP inclusion (POST)
+  [ 40/105] [92mBLOCKED [0m 403   RFI-004    Double-encoded http URL
+  [ 41/105] [92mBLOCKED [0m 403   RFI-005    PHP stream wrapper (php://input)
+  [ 42/105] [92mBLOCKED [0m 403   RFI-006    Multiple malicious filenames array
+  [ 43/105] [92mBLOCKED [0m 403   SCAN-001   sqlmap
+  [ 44/105] [92mBLOCKED [0m 403   SCAN-002   Nmap Scripting Engine
+  [ 45/105] [92mBLOCKED [0m 403   SCAN-003   Nikto
+  [ 46/105] [92mBLOCKED [0m 403   SCAN-004   Havij SQLi tool
+  [ 47/105] [92mBLOCKED [0m 403   SCAN-005   DirBuster
+  [ 48/105] [92mBLOCKED [0m 403   SCAN-006   Arachni
+  [ 49/105] [92mBLOCKED [0m 403   SCAN-007   WPScan
+  [ 50/105] [92mBLOCKED [0m 403   SCAN-008   w3af
+  [ 51/105] [92mBLOCKED [0m 403   SCAN-009   gobuster
+  [ 52/105] [92mBLOCKED [0m 403   SCAN-010   Burp Suite Pro
+  [ 53/105] [92mBLOCKED [0m 403   SCAN-011   Metasploit HTTP client
+  [ 54/105] [92mBLOCKED [0m 403   SCAN-012   OWASP ZAP
+  [ 55/105] [92mBLOCKED [0m 403   SCAN-013   Acunetix header
+  [ 56/105] [91mALLOWED [0m 200   SCAN-014   X-Scanner custom header
+  [ 57/105] [92mBLOCKED [0m 403   SCAN-015   Nessus fingerprint probe path
+  [ 58/105] [92mBLOCKED [0m 403   SCAN-016   Acunetix test file path
+  [ 59/105] [92mBLOCKED [0m 403   SCAN-017   w00tw00t ISC SANS signature
+  [ 60/105] [92mBLOCKED [0m 403   SQLI-001   Basic UNION SELECT
+  [ 61/105] [92mBLOCKED [0m 403   SQLI-002   OR 1=1 authentication bypass
+  [ 62/105] [92mBLOCKED [0m 403   SQLI-003   INFORMATION_SCHEMA enumeration
+  [ 63/105] [92mBLOCKED [0m 403   SQLI-004   Boolean-based blind
+  [ 64/105] [92mBLOCKED [0m 403   SQLI-005   Time-based blind (WAITFOR)
+  [ 65/105] [92mBLOCKED [0m 403   SQLI-006   LOAD_FILE exfiltration (POST)
+  [ 66/105] [92mBLOCKED [0m 403   SQLI-007   INTO OUTFILE
+  [ 67/105] [92mBLOCKED [0m 403   SQLI-008   Hex-encoded UNION
+  [ 68/105] [92mBLOCKED [0m 403   SQLI-009   MySQL @@version substring
+  [ 69/105] [91mALLOWED [0m 200   SQLI-010   CASE WHEN injection
+  [ 70/105] [92mBLOCKED [0m 403   SQLI-011   PostgreSQL version() probe
+  [ 71/105] [92mBLOCKED [0m 403   SQLI-012   CAST-based enumeration
+  [ 72/105] [91mALLOWED [0m 200   SQLI-013   Comment-string termination
+  [ 73/105] [92mBLOCKED [0m 403   SQLI-014   BENCHMARK timing
+  [ 74/105] [91mALLOWED [0m 200   SQLI-015   ROW subselect anomaly
+  [ 75/105] [92mBLOCKED [0m 403   SQLI-016   xp_cmdshell execution
+  [ 76/105] [92mBLOCKED [0m 403   SQLI-017   NoSQL MongoDB $ne bypass
+  [ 77/105] [92mBLOCKED [0m 403   SQLI-018   IS_SRVROLEMEMBER sysadmin probe
+  [ 78/105] [92mBLOCKED [0m 403   SSRF-001   EC2 metadata service /latest/meta-data/
+  [ 79/105] [92mBLOCKED [0m 403   SSRF-002   EC2 user-data endpoint
+  [ 80/105] [92mBLOCKED [0m 403   SSRF-003   EC2 IAM security-credentials
+  [ 81/105] [92mBLOCKED [0m 403   SSRF-004   ECS task metadata v3
+  [ 82/105] [92mBLOCKED [0m 403   SSRF-005   ECS task metadata v4
+  [ 83/105] [92mBLOCKED [0m 403   SSRF-006   Lambda runtime API
+  [ 84/105] [92mBLOCKED [0m 403   SSRF-007   IMDSv2 token request
+  [ 85/105] [92mBLOCKED [0m 403   SSRF-008   localhost internal probe
+  [ 86/105] [92mBLOCKED [0m 403   SSRF-009   GCP metadata server
+  [ 87/105] [92mBLOCKED [0m 403   WPA-001    HTTP Response Splitting (CR/LF in URL)
+  [ 88/105] [92mBLOCKED [0m 403   WPA-002    Invalid Transfer-Encoding (desync)
+  [ 89/105] [92mBLOCKED [0m 403   WPA-003    Unicode full/half-width evasion
+  [ 90/105] [91mALLOWED [0m 200   WPA-004    HEAD with body
+  [ 91/105] [92mBLOCKED [0m 403   WPA-005    Invalid Range header (huge)
+  [ 92/105] [92mBLOCKED [0m 403   WPA-006    Hop-by-hop header abuse
+  [ 93/105] [91mALLOWED [0m 200   WPA-007    Multiple Content-Encoding
+  [ 94/105] [92mBLOCKED [0m 403   XSS-001    Basic script tag
+  [ 95/105] [92mBLOCKED [0m 403   XSS-002    Image onerror
+  [ 96/105] [92mBLOCKED [0m 403   XSS-003    SVG onload
+  [ 97/105] [92mBLOCKED [0m 403   XSS-004    JavaScript URI
+  [ 98/105] [92mBLOCKED [0m 403   XSS-005    Event handler body
+  [ 99/105] [92mBLOCKED [0m 403   XSS-006    iframe srcdoc
+  [100/105] [92mBLOCKED [0m 403   XSS-007    Double-encoded script
+  [101/105] [92mBLOCKED [0m 403   XSS-008    Mixed case evasion
+  [102/105] [92mBLOCKED [0m 403   XSS-009    HTML entity evasion
+  [103/105] [92mBLOCKED [0m 403   XSS-010    Polyglot payload
+  [104/105] [92mBLOCKED [0m 403   XSS-011    DOM clobbering
+  [105/105] [92mBLOCKED [0m 403   XSS-012    Expression evasion (older IE)
+
+============================================================
+  Target coverage : 91.4%  (96/105 blocked)
+  Blocked         : 96
+  Allowed         : 9  <-- GAPS, investigate these
+  Errors          : 0
+============================================================
+
+Coverage by category:
+  Command Injection                    11/12   91.7%
+  LFI / Path Traversal                 11/13   84.6%
+  Log4Shell (CVE-2021-44228)           11/11   100.0%
+  Remote File Inclusion                 6/6    100.0%
+  Scanner / Attack Tool Detection      16/17   94.1%
+  SQL Injection                        15/18   83.3%
+  SSRF (Server-Side Request Forgery)    9/9    100.0%
+  Web Protocol Attack                   5/7    71.4%
+  Cross-Site Scripting                 12/12   100.0%
+
+[+] JSON report: reports/waf_report.json
+[+] HTML report: reports/waf_report.html
