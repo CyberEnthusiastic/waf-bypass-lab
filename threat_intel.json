@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-04-18T16:40:23.232553+00:00",
-  "daily_tip": "Use SBOM generation in CI/CD \u2014 know what you ship before you ship it.",
-  "tip_number": 16,
+  "updated_at": "2026-04-19T17:36:56.008982+00:00",
+  "daily_tip": "Block known-bad IPs at the WAF layer \u2014 don't rely on application code.",
+  "tip_number": 17,
   "cisa_kev_count": 1569,
   "recent_cves": [
     {
-      "id": "CVE-2026-22734",
-      "description": "Cloud Foundry UUA is\u00a0vulnerable to a bypass that allows an attacker to obtain a token for any user and gain access to UAA-protected systems. This vulnerability exists when SAML 2.0 bearer assertions a"
+      "id": "CVE-2026-2262",
+      "description": "The Easy Appointments plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.12.21 via the `/wp-json/wp/v2/eablocks/ea_appointments/` REST API end"
     },
     {
-      "id": "CVE-2026-40260",
-      "description": "pypdf is a free and open-source pure-python PDF library. In versions prior to 6.10.0, manipulated XMP metadata entity declarations can exhaust RAM. An attacker who exploits this vulnerability can craf"
+      "id": "CVE-2026-40323",
+      "description": "SP1 is a zero\u2011knowledge virtual machine that proves the correct execution of programs compiled for the RISC-V architecture. In versions 6.0.0 through 6.0.2, a soundness vulnerability in the SP1 V6 rec"
     },
     {
-      "id": "CVE-2026-40262",
-      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset delivery handler serves uploaded files inline and relies on magic-byte detection for content type, which do"
+      "id": "CVE-2026-40324",
+      "description": "Hot Chocolate is an open-source GraphQL server. Prior to versions 12.22.7, 13.9.16, 14.3.1, and 15.1.14, Hot Chocolate's recursive descent parser `Utf8GraphQLParser` has no recursion depth limit. A cr"
     },
     {
-      "id": "CVE-2026-40263",
-      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the login endpoint performs bcrypt password verification only when the supplied username exists, returning immediatel"
+      "id": "CVE-2026-40333",
+      "description": "libgphoto2 is a camera access and control library. In versions up to and including 2.5.33, two functions in camlibs/ptp2/ptp-pack.c accept a data pointer but no length parameter, performing unbounded "
     },
     {
-      "id": "CVE-2026-40265",
-      "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset download endpoint at /api/notes/{noteID}/assets/{assetID} is registered without authentication middleware, "
+      "id": "CVE-2026-40334",
+      "description": "libgphoto2 is a camera access and control library. In versions up to and including 2.5.33, a missing null terminator exists in ptp_unpack_Canon_FE() in camlibs/ptp2/ptp-pack.c (line 1377). The functio"
     }
   ],
   "new_kev_today": []
