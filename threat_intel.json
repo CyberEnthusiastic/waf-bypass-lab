@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-04-19T17:36:56.008982+00:00",
-  "daily_tip": "Block known-bad IPs at the WAF layer \u2014 don't rely on application code.",
-  "tip_number": 17,
+  "updated_at": "2026-04-20T14:32:49.486845+00:00",
+  "daily_tip": "Monitor for credential leaks on GitHub/Pastebin \u2014 attackers automate this.",
+  "tip_number": 18,
   "cisa_kev_count": 1569,
   "recent_cves": [
     {
-      "id": "CVE-2026-2262",
-      "description": "The Easy Appointments plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.12.21 via the `/wp-json/wp/v2/eablocks/ea_appointments/` REST API end"
+      "id": "CVE-2026-0868",
+      "description": "The EMC \u2013 Easily Embed Calendly Scheduling Features plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's calendly shortcode in all versions up to, and including, 4.4 due "
     },
     {
-      "id": "CVE-2026-40323",
-      "description": "SP1 is a zero\u2011knowledge virtual machine that proves the correct execution of programs compiled for the RISC-V architecture. In versions 6.0.0 through 6.0.2, a soundness vulnerability in the SP1 V6 rec"
+      "id": "CVE-2026-6559",
+      "description": "A weakness has been identified in Wavlink WL-WN579A3 220323. This affects the function sub_401F80 of the file /cgi-bin/login.cgi. This manipulation of the argument Hostname causes cross site scripting"
     },
     {
-      "id": "CVE-2026-40324",
-      "description": "Hot Chocolate is an open-source GraphQL server. Prior to versions 12.22.7, 13.9.16, 14.3.1, and 15.1.14, Hot Chocolate's recursive descent parser `Utf8GraphQLParser` has no recursion depth limit. A cr"
+      "id": "CVE-2026-6560",
+      "description": "A security vulnerability has been detected in H3C Magic B0 up to 100R002. This vulnerability affects the function Edit_BasicSSID of the file /goform/aspForm. Such manipulation of the argument param le"
     },
     {
-      "id": "CVE-2026-40333",
-      "description": "libgphoto2 is a camera access and control library. In versions up to and including 2.5.33, two functions in camlibs/ptp2/ptp-pack.c accept a data pointer but no length parameter, performing unbounded "
+      "id": "CVE-2026-6561",
+      "description": "A vulnerability was detected in EyouCMS up to 1.7.1. This issue affects the function edit_adminlogo of the file application/admin/controller/Index.php. Performing a manipulation of the argument filena"
     },
     {
-      "id": "CVE-2026-40334",
-      "description": "libgphoto2 is a camera access and control library. In versions up to and including 2.5.33, a missing null terminator exists in ptp_unpack_Canon_FE() in camlibs/ptp2/ptp-pack.c (line 1377). The functio"
+      "id": "CVE-2026-6562",
+      "description": "A flaw has been found in dameng100 muucmf 1.9.5.20260309. Impacted is the function getListByPage of the file /index/Search/index.html. Executing a manipulation of the argument keyword can lead to sql "
     }
   ],
   "new_kev_today": []
