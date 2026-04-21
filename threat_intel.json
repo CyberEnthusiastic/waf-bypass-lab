@@ -1,29 +1,60 @@
 {
-  "updated_at": "2026-04-20T14:32:49.486845+00:00",
-  "daily_tip": "Monitor for credential leaks on GitHub/Pastebin \u2014 attackers automate this.",
-  "tip_number": 18,
-  "cisa_kev_count": 1569,
+  "updated_at": "2026-04-21T15:30:17.549431+00:00",
+  "daily_tip": "Use short-lived tokens instead of long-lived API keys \u2014 reduce blast radius.",
+  "tip_number": 19,
+  "cisa_kev_count": 1577,
   "recent_cves": [
     {
-      "id": "CVE-2026-0868",
-      "description": "The EMC \u2013 Easily Embed Calendly Scheduling Features plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's calendly shortcode in all versions up to, and including, 4.4 due "
+      "id": "CVE-2026-6584",
+      "description": "A vulnerability was found in TransformerOptimus SuperAGI up to 0.0.14. This vulnerability affects the function update_user of the file superagi/controllers/user.py of the component User Update Endpoin"
     },
     {
-      "id": "CVE-2026-6559",
-      "description": "A weakness has been identified in Wavlink WL-WN579A3 220323. This affects the function sub_401F80 of the file /cgi-bin/login.cgi. This manipulation of the argument Hostname causes cross site scripting"
+      "id": "CVE-2026-6585",
+      "description": "A vulnerability was determined in TransformerOptimus SuperAGI up to 0.0.14. This issue affects the function update_organisation of the file superagi/controllers/organisation.py of the component Organi"
     },
     {
-      "id": "CVE-2026-6560",
-      "description": "A security vulnerability has been detected in H3C Magic B0 up to 100R002. This vulnerability affects the function Edit_BasicSSID of the file /goform/aspForm. Such manipulation of the argument param le"
+      "id": "CVE-2026-6586",
+      "description": "A vulnerability was identified in TransformerOptimus SuperAGI up to 0.0.14. Impacted is the function get_budget/update_budget of the file superagi/controllers/budget.py of the component Budget Endpoin"
     },
     {
-      "id": "CVE-2026-6561",
-      "description": "A vulnerability was detected in EyouCMS up to 1.7.1. This issue affects the function edit_adminlogo of the file application/admin/controller/Index.php. Performing a manipulation of the argument filena"
+      "id": "CVE-2026-6587",
+      "description": "A security flaw has been discovered in vibrantlabsai RAGAS up to 0.4.3. The affected element is the function _try_process_local_file/_try_process_url of the file src/ragas/metrics/collections/multi_mo"
     },
     {
-      "id": "CVE-2026-6562",
-      "description": "A flaw has been found in dameng100 muucmf 1.9.5.20260309. Impacted is the function getListByPage of the file /index/Search/index.html. Executing a manipulation of the argument keyword can lead to sql "
+      "id": "CVE-2026-6588",
+      "description": "A weakness has been identified in serge-chat serge up to 1.4TB. The impacted element is the function download_model/delete_model of the file api/src/serge/routers/model.py of the component Model API E"
     }
   ],
-  "new_kev_today": []
+  "new_kev_today": [
+    {
+      "cve": "CVE-2026-20122",
+      "vendor": "Cisco",
+      "product": "Catalyst SD-WAN Manger",
+      "name": "Cisco Catalyst SD-WAN Manager Incorrect Use of Privileged APIs Vulnerability"
+    },
+    {
+      "cve": "CVE-2026-20133",
+      "vendor": "Cisco",
+      "product": "Catalyst SD-WAN Manager",
+      "name": "Cisco Catalyst SD-WAN Manager Exposure of Sensitive Information to an Unauthorized Actor Vulnerability"
+    },
+    {
+      "cve": "CVE-2025-2749",
+      "vendor": "Kentico",
+      "product": "Kentico Xperience",
+      "name": "Kentico Xperience Path Traversal Vulnerability"
+    },
+    {
+      "cve": "CVE-2023-27351",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "name": "PaperCut NG/MF Improper Authentication Vulnerability"
+    },
+    {
+      "cve": "CVE-2025-48700",
+      "vendor": "Synacor",
+      "product": "Zimbra Collaboration Suite (ZCS)",
+      "name": "Synacor Zimbra Collaboration Suite (ZCS) Cross-site Scripting Vulnerability"
+    }
+  ]
 }
