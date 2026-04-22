@@ -1,60 +1,29 @@
 {
-  "updated_at": "2026-04-21T15:30:17.549431+00:00",
-  "daily_tip": "Use short-lived tokens instead of long-lived API keys \u2014 reduce blast radius.",
-  "tip_number": 19,
+  "updated_at": "2026-04-22T14:32:58.502785+00:00",
+  "daily_tip": "Enable CloudTrail in all regions \u2014 attackers will use the region you forgot.",
+  "tip_number": 20,
   "cisa_kev_count": 1577,
   "recent_cves": [
     {
-      "id": "CVE-2026-6584",
-      "description": "A vulnerability was found in TransformerOptimus SuperAGI up to 0.0.14. This vulnerability affects the function update_user of the file superagi/controllers/user.py of the component User Update Endpoin"
+      "id": "CVE-2026-34839",
+      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, the Glances web server exposes a REST API (`/api/4/*`) that is accessible without authentication and allows cro"
     },
     {
-      "id": "CVE-2026-6585",
-      "description": "A vulnerability was determined in TransformerOptimus SuperAGI up to 0.0.14. This issue affects the function update_organisation of the file superagi/controllers/organisation.py of the component Organi"
+      "id": "CVE-2026-35570",
+      "description": "OpenClaude is an open-source coding-agent command line interface for cloud and local model providers. Versions prior to 0.5.1 have a logic flaw in `bashToolHasPermission()` inside `src/tools/BashTool/"
     },
     {
-      "id": "CVE-2026-6586",
-      "description": "A vulnerability was identified in TransformerOptimus SuperAGI up to 0.0.14. Impacted is the function get_budget/update_budget of the file superagi/controllers/budget.py of the component Budget Endpoin"
+      "id": "CVE-2026-35587",
+      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, a Server-Side Request Forgery (SSRF) vulnerability exists in the Glances IP plugin due to improper validation o"
     },
     {
-      "id": "CVE-2026-6587",
-      "description": "A security flaw has been discovered in vibrantlabsai RAGAS up to 0.4.3. The affected element is the function _try_process_local_file/_try_process_url of the file src/ragas/metrics/collections/multi_mo"
+      "id": "CVE-2026-35588",
+      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, the Cassandra export module (`glances/exports/glances_cassandra/__init__.py`) interpolates `keyspace`, `table`,"
     },
     {
-      "id": "CVE-2026-6588",
-      "description": "A weakness has been identified in serge-chat serge up to 1.4TB. The impacted element is the function download_model/delete_model of the file api/src/serge/routers/model.py of the component Model API E"
+      "id": "CVE-2026-40045",
+      "description": "OpenClaw before 2026.4.2 accepts non-loopback cleartext ws:// gateway endpoints and transmits stored gateway credentials over unencrypted connections. Attackers can forge discovery results or craft se"
     }
   ],
-  "new_kev_today": [
-    {
-      "cve": "CVE-2026-20122",
-      "vendor": "Cisco",
-      "product": "Catalyst SD-WAN Manger",
-      "name": "Cisco Catalyst SD-WAN Manager Incorrect Use of Privileged APIs Vulnerability"
-    },
-    {
-      "cve": "CVE-2026-20133",
-      "vendor": "Cisco",
-      "product": "Catalyst SD-WAN Manager",
-      "name": "Cisco Catalyst SD-WAN Manager Exposure of Sensitive Information to an Unauthorized Actor Vulnerability"
-    },
-    {
-      "cve": "CVE-2025-2749",
-      "vendor": "Kentico",
-      "product": "Kentico Xperience",
-      "name": "Kentico Xperience Path Traversal Vulnerability"
-    },
-    {
-      "cve": "CVE-2023-27351",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "name": "PaperCut NG/MF Improper Authentication Vulnerability"
-    },
-    {
-      "cve": "CVE-2025-48700",
-      "vendor": "Synacor",
-      "product": "Zimbra Collaboration Suite (ZCS)",
-      "name": "Synacor Zimbra Collaboration Suite (ZCS) Cross-site Scripting Vulnerability"
-    }
-  ]
+  "new_kev_today": []
 }
