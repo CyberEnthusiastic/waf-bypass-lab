@@ -1,29 +1,36 @@
 {
-  "updated_at": "2026-04-22T14:32:58.502785+00:00",
-  "daily_tip": "Enable CloudTrail in all regions \u2014 attackers will use the region you forgot.",
-  "tip_number": 20,
-  "cisa_kev_count": 1577,
+  "updated_at": "2026-04-23T05:48:53.807759+00:00",
+  "daily_tip": "Enforce branch protection + required reviews \u2014 no one merges to main alone.",
+  "tip_number": 21,
+  "cisa_kev_count": 1578,
   "recent_cves": [
     {
-      "id": "CVE-2026-34839",
-      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, the Glances web server exposes a REST API (`/api/4/*`) that is accessible without authentication and allows cro"
+      "id": "CVE-2026-40343",
+      "description": "free5GC UDR is the user data repository (UDR) for free5GC, an an open-source project for 5th generation (5G) mobile core networks. In versions up to and including 1.4.2, a fail-open request handling f"
     },
     {
-      "id": "CVE-2026-35570",
-      "description": "OpenClaude is an open-source coding-agent command line interface for cloud and local model providers. Versions prior to 0.5.1 have a logic flaw in `bashToolHasPermission()` inside `src/tools/BashTool/"
+      "id": "CVE-2026-40575",
+      "description": "OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 may trust a client-supplied `X-Forwarded-Uri` header when `--reverse-proxy` is enable"
     },
     {
-      "id": "CVE-2026-35587",
-      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, a Server-Side Request Forgery (SSRF) vulnerability exists in the Glances IP plugin due to improper validation o"
+      "id": "CVE-2026-41059",
+      "description": "OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 have a configuration-dependent authentication bypass. Deployments are affected when a"
     },
     {
-      "id": "CVE-2026-35588",
-      "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.4, the Cassandra export module (`glances/exports/glances_cassandra/__init__.py`) interpolates `keyspace`, `table`,"
+      "id": "CVE-2026-41064",
+      "description": "WWBN AVideo is an open source video platform. In versions up to and including 29.0, an incomplete fix for AVideo's `test.php` adds `escapeshellarg` for wget but leaves the `file_get_contents` and `cur"
     },
     {
-      "id": "CVE-2026-40045",
-      "description": "OpenClaw before 2026.4.2 accepts non-loopback cleartext ws:// gateway endpoints and transmits stored gateway credentials over unencrypted connections. Attackers can forge discovery results or craft se"
+      "id": "CVE-2026-41126",
+      "description": "BigBlueButton is an open-source virtual classroom. Versions prior to 3.0.24 have an Open Redirect through bigbluebutton/api/join via get-parameter \"logoutURL.\" Version 3.0.24 has adjusted the handling"
     }
   ],
-  "new_kev_today": []
+  "new_kev_today": [
+    {
+      "cve": "CVE-2026-33825",
+      "vendor": "Microsoft",
+      "product": "Defender",
+      "name": "Microsoft Defender Insufficient Granularity of Access Control Vulnerability"
+    }
+  ]
 }
