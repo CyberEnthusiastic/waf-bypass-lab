@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-04-23T14:57:46.847776+00:00",
-  "daily_tip": "Enforce branch protection + required reviews \u2014 no one merges to main alone.",
-  "tip_number": 21,
-  "cisa_kev_count": 1578,
+  "updated_at": "2026-04-24T14:28:19.583148+00:00",
+  "daily_tip": "Rate-limit authentication endpoints \u2014 brute force is trivially automated.",
+  "tip_number": 22,
+  "cisa_kev_count": 1579,
   "recent_cves": [
     {
-      "id": "CVE-2026-40343",
-      "description": "free5GC UDR is the user data repository (UDR) for free5GC, an an open-source project for 5th generation (5G) mobile core networks. In versions up to and including 1.4.2, a fail-open request handling f"
+      "id": "CVE-2025-36074",
+      "description": "IBM Security Verify Directory (Container) 10.0.0 through 10.0.0.3 IBM Security Verify Directory could be vulnerable to malicious file upload by not validating file type. A privileged user could upload"
     },
     {
-      "id": "CVE-2026-40575",
-      "description": "OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 may trust a client-supplied `X-Forwarded-Uri` header when `--reverse-proxy` is enable"
+      "id": "CVE-2026-1272",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2 is vulnerable to Security Misconfiguration vulnerability in the user access control panel."
     },
     {
-      "id": "CVE-2026-41059",
-      "description": "OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 have a configuration-dependent authentication bypass. Deployments are affected when a"
+      "id": "CVE-2026-1274",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2 is vulnerable to a Bypass Business Logic vulnerability in the access management control panel."
     },
     {
-      "id": "CVE-2026-41064",
-      "description": "WWBN AVideo is an open source video platform. In versions up to and including 29.0, an incomplete fix for AVideo's `test.php` adds `escapeshellarg` for wget but leaves the `file_get_contents` and `cur"
+      "id": "CVE-2026-1352",
+      "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.4 for Linux, UNIX and Windows (includes Db2 Connect Server) could allow an\u00a0authenticated user to cause a denial of service due to improper neutra"
     },
     {
-      "id": "CVE-2026-41126",
-      "description": "BigBlueButton is an open-source virtual classroom. Versions prior to 3.0.24 have an Open Redirect through bigbluebutton/api/join via get-parameter \"logoutURL.\" Version 3.0.24 has adjusted the handling"
+      "id": "CVE-2026-1726",
+      "description": "IBM Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2, 4.2.1, 5.0, and 5.1"
     }
   ],
   "new_kev_today": [
     {
-      "cve": "CVE-2026-33825",
-      "vendor": "Microsoft",
-      "product": "Defender",
-      "name": "Microsoft Defender Insufficient Granularity of Access Control Vulnerability"
+      "cve": "CVE-2026-39987",
+      "vendor": "Marimo",
+      "product": "Marimo",
+      "name": "Marimo Remote Code Execution Vulnerability"
     }
   ]
 }
