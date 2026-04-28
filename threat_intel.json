@@ -1,36 +1,29 @@
 {
-  "updated_at": "2026-04-24T14:28:19.583148+00:00",
-  "daily_tip": "Rate-limit authentication endpoints \u2014 brute force is trivially automated.",
-  "tip_number": 22,
-  "cisa_kev_count": 1579,
+  "updated_at": "2026-04-28T04:11:18.138517+00:00",
+  "daily_tip": "Review your SAML/OIDC configurations annually \u2014 misconfigs enable account takeover.",
+  "tip_number": 26,
+  "cisa_kev_count": 1583,
   "recent_cves": [
     {
-      "id": "CVE-2025-36074",
-      "description": "IBM Security Verify Directory (Container) 10.0.0 through 10.0.0.3 IBM Security Verify Directory could be vulnerable to malicious file upload by not validating file type. A privileged user could upload"
+      "id": "CVE-2026-33277",
+      "description": "An OS command Injection issue exists in LogonTracer prior to v2.0.0. An arbitrary OS command may be executed by a logged-in user."
     },
     {
-      "id": "CVE-2026-1272",
-      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2 is vulnerable to Security Misconfiguration vulnerability in the user access control panel."
+      "id": "CVE-2026-33566",
+      "description": "There is a cypher injection issue in LogonTracer prior to v2.0.0. If specially crafted Windows event log data is loaded, the contents of the database may be altered."
     },
     {
-      "id": "CVE-2026-1274",
-      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2 is vulnerable to a Bypass Business Logic vulnerability in the access management control panel."
+      "id": "CVE-2026-42363",
+      "description": "An insufficient encryption vulnerability exists in the Device Authentication functionality of GeoVision GV-IP Device Utility 9.0.5. Listening to broadcast packets can lead to credentials leak. An atta"
     },
     {
-      "id": "CVE-2026-1352",
-      "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.4 for Linux, UNIX and Windows (includes Db2 Connect Server) could allow an\u00a0authenticated user to cause a denial of service due to improper neutra"
+      "id": "CVE-2026-7065",
+      "description": "A vulnerability has been found in BidingCC BuildingAI up to 26.0.1. Impacted is the function uploadRemoteFile of the file packages/core/src/modules/upload/services/file-storage.service.ts of the compo"
     },
     {
-      "id": "CVE-2026-1726",
-      "description": "IBM Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2, 4.2.1, 5.0, and 5.1"
+      "id": "CVE-2026-7066",
+      "description": "A vulnerability was found in choieastsea simple-openstack-mcp up to 767b2f4a8154cca344344b9725537a58399e6036. The affected element is the function exec_openstack of the file server.py. The manipulatio"
     }
   ],
-  "new_kev_today": [
-    {
-      "cve": "CVE-2026-39987",
-      "vendor": "Marimo",
-      "product": "Marimo",
-      "name": "Marimo Remote Code Execution Vulnerability"
-    }
-  ]
+  "new_kev_today": []
 }
