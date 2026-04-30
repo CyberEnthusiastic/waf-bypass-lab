@@ -1,42 +1,29 @@
 {
-  "updated_at": "2026-04-29T16:15:18.690334+00:00",
-  "daily_tip": "Use separate AWS accounts for prod/staging/dev \u2014 blast radius containment.",
-  "tip_number": 27,
+  "updated_at": "2026-04-30T15:53:08.994313+00:00",
+  "daily_tip": "Enable GuardDuty in all accounts \u2014 it is the cheapest cloud threat detector.",
+  "tip_number": 28,
   "cisa_kev_count": 1585,
   "recent_cves": [
     {
-      "id": "CVE-2026-27785",
-      "description": "Specific firmware versions of Milesight AIOT camera firmware contain hard-coded credentials."
+      "id": "CVE-2026-40560",
+      "description": "Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improper Header Precedence.\n\nStarman incorrectly prioritizes \"Content-Length\" over \"Transfer-Encoding: chunked\" when both head"
     },
     {
-      "id": "CVE-2026-40972",
-      "description": "An attacker on the same network as the remote application may be able to utilize a timing attack to discover information about the remote secret. In extreme circumstances this could result in the atta"
+      "id": "CVE-2026-23773",
+      "description": "Dell Disk Library for Mainframe, version(s) DLm 8700/2700 contain(s) a Server-Side Request Forgery (SSRF) vulnerability. A low privileged attacker with remote access could potentially exploit this vul"
     },
     {
-      "id": "CVE-2026-40973",
-      "description": "A local attacker on the same host as the application may be able to take control of the directory used by `ApplicationTemp`. When `server.servlet.session.persistent` is set to `true` and the attack pe"
+      "id": "CVE-2026-42615",
+      "description": "GCHQ CyberChef before 11.0.0 allows XSS via Show Base64 offsets, as demonstrated by the /#recipe=Show_Base64_offsets('%3Cscript substring."
     },
     {
-      "id": "CVE-2026-40974",
-      "description": "Spring Boot's Cassandra auto-configuration does not perform hostname verification when establishing an SSL connection to Cassandra.\n\nAffected: Spring Boot 4.0.0\u20134.0.5 (fix 4.0.6), 3.5.0\u20133.5.13 (fix 3."
+      "id": "CVE-2026-21023",
+      "description": "Insufficient verification of data authenticity in PackageManagerService prior to SMR Mar-2026 Release 1 allows local attackers to modify the installation restriction of specific application."
     },
     {
-      "id": "CVE-2026-40975",
-      "description": "Values produced by ${random.value} are not suitable for use as secrets. ${random.uuid} is not affected. ${random.int} and ${random.long} should never be used for secrets as they are numeric values wit"
+      "id": "CVE-2026-35155",
+      "description": "Dell iDRAC10, versions 1.20.70.50 and 1.30.05.10, contains an Insufficiently Protected Credentials vulnerability. A race condition vulnerability exists that could allow an authenticated low\u2011privileged"
     }
   ],
-  "new_kev_today": [
-    {
-      "cve": "CVE-2024-1708",
-      "vendor": "ConnectWise",
-      "product": "ScreenConnect",
-      "name": "ConnectWise ScreenConnect Path Traversal Vulnerability"
-    },
-    {
-      "cve": "CVE-2026-32202",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "name": "Microsoft Windows Protection Mechanism Failure Vulnerability"
-    }
-  ]
+  "new_kev_today": []
 }
