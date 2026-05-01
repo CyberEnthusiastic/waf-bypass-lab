@@ -1,29 +1,36 @@
 {
-  "updated_at": "2026-04-30T15:53:08.994313+00:00",
-  "daily_tip": "Enable GuardDuty in all accounts \u2014 it is the cheapest cloud threat detector.",
-  "tip_number": 28,
-  "cisa_kev_count": 1585,
+  "updated_at": "2026-05-01T16:43:39.830253+00:00",
+  "daily_tip": "Conduct red team exercises \u2014 your blue team improves by facing real attacks.",
+  "tip_number": 29,
+  "cisa_kev_count": 1586,
   "recent_cves": [
     {
-      "id": "CVE-2026-40560",
-      "description": "Starman versions before 0.4018 for Perl allows HTTP Request Smuggling via Improper Header Precedence.\n\nStarman incorrectly prioritizes \"Content-Length\" over \"Transfer-Encoding: chunked\" when both head"
+      "id": "CVE-2026-7445",
+      "description": "A security vulnerability has been detected in ZachHandley ZMCPTools up to 0.2.2. Affected by this issue is some unknown functionality of the file src/managers/ResourceManager.ts of the component MCP L"
     },
     {
-      "id": "CVE-2026-23773",
-      "description": "Dell Disk Library for Mainframe, version(s) DLm 8700/2700 contain(s) a Server-Side Request Forgery (SSRF) vulnerability. A low privileged attacker with remote access could potentially exploit this vul"
+      "id": "CVE-2026-7446",
+      "description": "A vulnerability was detected in VetCoders mcp-server-semgrep 1.0.0. This affects the function analyze_results/filter_results/export_results/compare_results/scan_directory/create_rule of the file src/i"
     },
     {
-      "id": "CVE-2026-42615",
-      "description": "GCHQ CyberChef before 11.0.0 allows XSS via Show Base64 offsets, as demonstrated by the /#recipe=Show_Base64_offsets('%3Cscript substring."
+      "id": "CVE-2026-7447",
+      "description": "A flaw has been found in SourceCodester Pet Grooming Management Software 1.0. This vulnerability affects unknown code of the file /admin/update_customer.php. This manipulation of the argument type/len"
     },
     {
-      "id": "CVE-2026-21023",
-      "description": "Insufficient verification of data authenticity in PackageManagerService prior to SMR Mar-2026 Release 1 allows local attackers to modify the installation restriction of specific application."
+      "id": "CVE-2026-7468",
+      "description": "A security vulnerability has been detected in 1024-lab smart-admin up to 3.30.0. This affects an unknown function of the file /smart-admin-api/druid/index.html of the component Demo Site. The manipula"
     },
     {
-      "id": "CVE-2026-35155",
-      "description": "Dell iDRAC10, versions 1.20.70.50 and 1.30.05.10, contains an Insufficiently Protected Credentials vulnerability. A race condition vulnerability exists that could allow an authenticated low\u2011privileged"
+      "id": "CVE-2026-7469",
+      "description": "A vulnerability was detected in Tenda 4G300 US_4G300V1.0Mt_V1.01.42_CN_TDC01. This impacts the function sub_425A28 of the file /goform/DelFil. The manipulation of the argument delflag results in comma"
     }
   ],
-  "new_kev_today": []
+  "new_kev_today": [
+    {
+      "cve": "CVE-2026-41940",
+      "vendor": "WebPros",
+      "product": "cPanel & WHM and WP2 (WordPress Squared)",
+      "name": "WebPros cPanel & WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability"
+    }
+  ]
 }
