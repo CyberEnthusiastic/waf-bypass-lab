@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-05-01T16:43:39.830253+00:00",
-  "daily_tip": "Conduct red team exercises \u2014 your blue team improves by facing real attacks.",
-  "tip_number": 29,
-  "cisa_kev_count": 1586,
+  "updated_at": "2026-05-02T17:11:29.301673+00:00",
+  "daily_tip": "Document your incident response plan AND test it \u2014 untested plans fail.",
+  "tip_number": 30,
+  "cisa_kev_count": 1587,
   "recent_cves": [
     {
-      "id": "CVE-2026-7445",
-      "description": "A security vulnerability has been detected in ZachHandley ZMCPTools up to 0.2.2. Affected by this issue is some unknown functionality of the file src/managers/ResourceManager.ts of the component MCP L"
+      "id": "CVE-2026-22726",
+      "description": "Route Services can be leveraged to send app traffic to network destinations outside of an app's configured egress rules. As a result, a malicious developer with access to Cloudfoundry could configure "
     },
     {
-      "id": "CVE-2026-7446",
-      "description": "A vulnerability was detected in VetCoders mcp-server-semgrep 1.0.0. This affects the function analyze_results/filter_results/export_results/compare_results/scan_directory/create_rule of the file src/i"
+      "id": "CVE-2026-5403",
+      "description": "SBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution"
     },
     {
-      "id": "CVE-2026-7447",
-      "description": "A flaw has been found in SourceCodester Pet Grooming Management Software 1.0. This vulnerability affects unknown code of the file /admin/update_customer.php. This manipulation of the argument type/len"
+      "id": "CVE-2026-5404",
+      "description": "K12 RF5 file parser crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service"
     },
     {
-      "id": "CVE-2026-7468",
-      "description": "A security vulnerability has been detected in 1024-lab smart-admin up to 3.30.0. This affects an unknown function of the file /smart-admin-api/druid/index.html of the component Demo Site. The manipula"
+      "id": "CVE-2026-5405",
+      "description": "RDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution"
     },
     {
-      "id": "CVE-2026-7469",
-      "description": "A vulnerability was detected in Tenda 4G300 US_4G300V1.0Mt_V1.01.42_CN_TDC01. This impacts the function sub_425A28 of the file /goform/DelFil. The manipulation of the argument delflag results in comma"
+      "id": "CVE-2026-5656",
+      "description": "Profile import path traversal in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution"
     }
   ],
   "new_kev_today": [
     {
-      "cve": "CVE-2026-41940",
-      "vendor": "WebPros",
-      "product": "cPanel & WHM and WP2 (WordPress Squared)",
-      "name": "WebPros cPanel & WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability"
+      "cve": "CVE-2026-31431",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "name": "Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability"
     }
   ]
 }
