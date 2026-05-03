@@ -1,36 +1,29 @@
 {
-  "updated_at": "2026-05-02T17:11:29.301673+00:00",
-  "daily_tip": "Document your incident response plan AND test it \u2014 untested plans fail.",
-  "tip_number": 30,
+  "updated_at": "2026-05-03T14:36:44.949589+00:00",
+  "daily_tip": "Keep your security certifications current \u2014 they signal active learning.",
+  "tip_number": 31,
   "cisa_kev_count": 1587,
   "recent_cves": [
     {
-      "id": "CVE-2026-22726",
-      "description": "Route Services can be leveraged to send app traffic to network destinations outside of an app's configured egress rules. As a result, a malicious developer with access to Cloudfoundry could configure "
+      "id": "CVE-2026-7600",
+      "description": "A flaw has been found in ArtMin96 yii2-mcp-server 1.0.2. This impacts the function yii_command_help/yii_execute_command of the file src/index.ts of the component MCP Interface. Executing a manipulatio"
     },
     {
-      "id": "CVE-2026-5403",
-      "description": "SBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution"
+      "id": "CVE-2026-43824",
+      "description": "In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data."
     },
     {
-      "id": "CVE-2026-5404",
-      "description": "K12 RF5 file parser crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service"
+      "id": "CVE-2026-7601",
+      "description": "A vulnerability has been found in Open5GS up to 2.7.6. Affected is an unknown function of the file src/amf/gmm-handler.c of the component AMF. The manipulation of the argument reg_type leads to denial"
     },
     {
-      "id": "CVE-2026-5405",
-      "description": "RDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution"
+      "id": "CVE-2026-6378",
+      "description": "The Maxi Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `/wp-json/maxi-blocks/v1.0/style-card` REST API endpoint in all versions up to, and including, 2.1.9 due to in"
     },
     {
-      "id": "CVE-2026-5656",
-      "description": "Profile import path traversal in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution"
+      "id": "CVE-2026-7209",
+      "description": "The Simple Link Directory plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `qcopd-directory` shortcode in all versions up to, and including, 8.9.2. This is due to ins"
     }
   ],
-  "new_kev_today": [
-    {
-      "cve": "CVE-2026-31431",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "name": "Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability"
-    }
-  ]
+  "new_kev_today": []
 }
