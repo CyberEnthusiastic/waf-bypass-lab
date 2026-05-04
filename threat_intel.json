@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-05-03T14:36:44.949589+00:00",
-  "daily_tip": "Keep your security certifications current \u2014 they signal active learning.",
-  "tip_number": 31,
+  "updated_at": "2026-05-04T15:07:09.907631+00:00",
+  "daily_tip": "Rotate all API keys and service account credentials quarterly.",
+  "tip_number": 1,
   "cisa_kev_count": 1587,
   "recent_cves": [
     {
-      "id": "CVE-2026-7600",
-      "description": "A flaw has been found in ArtMin96 yii2-mcp-server 1.0.2. This impacts the function yii_command_help/yii_execute_command of the file src/index.ts of the component MCP Interface. Executing a manipulatio"
+      "id": "CVE-2026-7671",
+      "description": "A vulnerability has been found in CodeWise Tornet Scooter Mobile App 4.75 on iOS/Android. The impacted element is an unknown function of the file /TwoFactor. Such manipulation leads to improper restri"
     },
     {
-      "id": "CVE-2026-43824",
-      "description": "In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data."
+      "id": "CVE-2026-7672",
+      "description": "A security vulnerability has been detected in youlaitech youlai-boot up to 2.21.1. This affects the function getUserList of the file src/main/java/com/youlai/boot/system/controller/UserController.java"
     },
     {
-      "id": "CVE-2026-7601",
-      "description": "A vulnerability has been found in Open5GS up to 2.7.6. Affected is an unknown function of the file src/amf/gmm-handler.c of the component AMF. The manipulation of the argument reg_type leads to denial"
+      "id": "CVE-2026-40561",
+      "description": "Starlet versions through 0.31 for Perl allows HTTP Request Smuggling via Improper Header Precedence.\n\nStarlet incorrectly prioritizes \"Content-Length\" over \"Transfer-Encoding: chunked\" when both heade"
     },
     {
-      "id": "CVE-2026-6378",
-      "description": "The Maxi Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `/wp-json/maxi-blocks/v1.0/style-card` REST API endpoint in all versions up to, and including, 2.1.9 due to in"
+      "id": "CVE-2026-7673",
+      "description": "A vulnerability was detected in crmeb_java up to 1.3.4. This vulnerability affects unknown code of the file crmeb/crmeb-service/src/main/java/com/zbkj/service/service/impl/UploadServiceImpl.java of th"
     },
     {
-      "id": "CVE-2026-7209",
-      "description": "The Simple Link Directory plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `qcopd-directory` shortcode in all versions up to, and including, 8.9.2. This is due to ins"
+      "id": "CVE-2026-7674",
+      "description": "A flaw has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. This issue affects the function start_single_service of the component Web Management Interface. Executing a manipulation "
     }
   ],
   "new_kev_today": []
