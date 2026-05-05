@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-05-04T15:07:09.907631+00:00",
-  "daily_tip": "Rotate all API keys and service account credentials quarterly.",
-  "tip_number": 1,
+  "updated_at": "2026-05-05T15:32:53.774235+00:00",
+  "daily_tip": "Enable MFA on every account \u2014 passwords alone are not enough.",
+  "tip_number": 2,
   "cisa_kev_count": 1587,
   "recent_cves": [
     {
-      "id": "CVE-2026-7671",
-      "description": "A vulnerability has been found in CodeWise Tornet Scooter Mobile App 4.75 on iOS/Android. The impacted element is an unknown function of the file /TwoFactor. Such manipulation leads to improper restri"
+      "id": "CVE-2026-6948",
+      "description": "Velociraptor versions prior to 0.76.4 contain a resource exhaustion vulnerability in the server's agent control channel.\n\n\n\nThis allows a compromised or rogue Velociraptor client to crash the server v"
     },
     {
-      "id": "CVE-2026-7672",
-      "description": "A security vulnerability has been detected in youlaitech youlai-boot up to 2.21.1. This affects the function getUserList of the file src/main/java/com/youlai/boot/system/controller/UserController.java"
+      "id": "CVE-2026-7710",
+      "description": "A security flaw has been discovered in YunaiV yudao-cloud up to 3.8.0. This affects the function doFilterInternal of the file JwtAuthenticationTokenFilter.java of the component Ruoyi-Vue-Pro. Performi"
     },
     {
-      "id": "CVE-2026-40561",
-      "description": "Starlet versions through 0.31 for Perl allows HTTP Request Smuggling via Improper Header Precedence.\n\nStarlet incorrectly prioritizes \"Content-Length\" over \"Transfer-Encoding: chunked\" when both heade"
+      "id": "CVE-2026-7711",
+      "description": "A weakness has been identified in MindsDB up to 26.01. This impacts the function exec of the file mindsdb/integrations/handlers/byom_handler/proc_wrapper.py of the component Engine Handler. Executing "
     },
     {
-      "id": "CVE-2026-7673",
-      "description": "A vulnerability was detected in crmeb_java up to 1.3.4. This vulnerability affects unknown code of the file crmeb/crmeb-service/src/main/java/com/zbkj/service/service/impl/UploadServiceImpl.java of th"
+      "id": "CVE-2026-7712",
+      "description": "A security vulnerability has been detected in MindsDB up to 26.01. Affected is the function pickle.loads of the component Pickle Handler. The manipulation leads to deserialization. The attack is possi"
     },
     {
-      "id": "CVE-2026-7674",
-      "description": "A flaw has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. This issue affects the function start_single_service of the component Web Management Interface. Executing a manipulation "
+      "id": "CVE-2026-7713",
+      "description": "A vulnerability was detected in crocodilestick Calibre-Web-Automated up to 4.0.6. Affected by this vulnerability is the function generate_auth_token of the file cps/kobo_auth.py of the component Kobo "
     }
   ],
   "new_kev_today": []
