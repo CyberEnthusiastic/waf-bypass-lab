@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-05-05T15:32:53.774235+00:00",
-  "daily_tip": "Enable MFA on every account \u2014 passwords alone are not enough.",
-  "tip_number": 2,
+  "updated_at": "2026-05-06T17:04:19.219973+00:00",
+  "daily_tip": "Review IAM policies monthly \u2014 least privilege drifts over time.",
+  "tip_number": 3,
   "cisa_kev_count": 1587,
   "recent_cves": [
     {
-      "id": "CVE-2026-6948",
-      "description": "Velociraptor versions prior to 0.76.4 contain a resource exhaustion vulnerability in the server's agent control channel.\n\n\n\nThis allows a compromised or rogue Velociraptor client to crash the server v"
+      "id": "CVE-2026-7783",
+      "description": "A flaw has been found in CodeCanyon Perfex CRM up to 3.4.1. This vulnerability affects the function AbstractKanban::applySortQuery of the file application/services/AbstractKanban.php of the component "
     },
     {
-      "id": "CVE-2026-7710",
-      "description": "A security flaw has been discovered in YunaiV yudao-cloud up to 3.8.0. This affects the function doFilterInternal of the file JwtAuthenticationTokenFilter.java of the component Ruoyi-Vue-Pro. Performi"
+      "id": "CVE-2026-7784",
+      "description": "A vulnerability has been found in RTGS2017 NagaAgent up to 5.1.0. This issue affects some unknown processing of the file apiserver/routes/extensions.py of the component Skills Endpoint. Such manipulat"
     },
     {
-      "id": "CVE-2026-7711",
-      "description": "A weakness has been identified in MindsDB up to 26.01. This impacts the function exec of the file mindsdb/integrations/handlers/byom_handler/proc_wrapper.py of the component Engine Handler. Executing "
+      "id": "CVE-2026-7785",
+      "description": "A security flaw has been discovered in A-G-U-P-T-A wireshark-mcp edaf604416fbc94a201b4043092d4a1b09a12275/400c3da70074f22f3cce7ccb65304cafc7089c89. This affects the function quick_capture of the file "
     },
     {
-      "id": "CVE-2026-7712",
-      "description": "A security vulnerability has been detected in MindsDB up to 26.01. Affected is the function pickle.loads of the component Pickle Handler. The manipulation leads to deserialization. The attack is possi"
+      "id": "CVE-2026-7788",
+      "description": "A security flaw has been discovered in Axle-Bucamp MCP-Docusaurus up to 404bc028e15ec304c9a045528560f4b5f27a17e0. The affected element is the function update_document/continue_document/delete_document"
     },
     {
-      "id": "CVE-2026-7713",
-      "description": "A vulnerability was detected in crocodilestick Calibre-Web-Automated up to 4.0.6. Affected by this vulnerability is the function generate_auth_token of the file cps/kobo_auth.py of the component Kobo "
+      "id": "CVE-2026-44028",
+      "description": "An issue was discovered in Nix before 2.34.7 and Lix before 2.95.2. Unbounded recursion in the NAR (Nix Archive) parser could lead to a stack-to-heap overflow when the parser is run on a coroutine sta"
     }
   ],
   "new_kev_today": []
