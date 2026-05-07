@@ -1,29 +1,36 @@
 {
-  "updated_at": "2026-05-06T17:04:19.219973+00:00",
-  "daily_tip": "Review IAM policies monthly \u2014 least privilege drifts over time.",
-  "tip_number": 3,
-  "cisa_kev_count": 1587,
+  "updated_at": "2026-05-07T14:53:03.323566+00:00",
+  "daily_tip": "Keep dependencies updated \u2014 90% of breaches exploit known CVEs.",
+  "tip_number": 4,
+  "cisa_kev_count": 1588,
   "recent_cves": [
     {
-      "id": "CVE-2026-7783",
-      "description": "A flaw has been found in CodeCanyon Perfex CRM up to 3.4.1. This vulnerability affects the function AbstractKanban::applySortQuery of the file application/services/AbstractKanban.php of the component "
+      "id": "CVE-2026-44405",
+      "description": "In Paramiko through 4.0.0 before a448945, rsakey.py allows the SHA-1 algorithm."
     },
     {
-      "id": "CVE-2026-7784",
-      "description": "A vulnerability has been found in RTGS2017 NagaAgent up to 5.1.0. This issue affects some unknown processing of the file apiserver/routes/extensions.py of the component Skills Endpoint. Such manipulat"
+      "id": "CVE-2025-71251",
+      "description": "In IMS, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed."
     },
     {
-      "id": "CVE-2026-7785",
-      "description": "A security flaw has been discovered in A-G-U-P-T-A wireshark-mcp edaf604416fbc94a201b4043092d4a1b09a12275/400c3da70074f22f3cce7ccb65304cafc7089c89. This affects the function quick_capture of the file "
+      "id": "CVE-2025-71252",
+      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed."
     },
     {
-      "id": "CVE-2026-7788",
-      "description": "A security flaw has been discovered in Axle-Bucamp MCP-Docusaurus up to 404bc028e15ec304c9a045528560f4b5f27a17e0. The affected element is the function update_document/continue_document/delete_document"
+      "id": "CVE-2025-71253",
+      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed."
     },
     {
-      "id": "CVE-2026-44028",
-      "description": "An issue was discovered in Nix before 2.34.7 and Lix before 2.95.2. Unbounded recursion in the NAR (Nix Archive) parser could lead to a stack-to-heap overflow when the parser is run on a coroutine sta"
+      "id": "CVE-2025-71254",
+      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed."
     }
   ],
-  "new_kev_today": []
+  "new_kev_today": [
+    {
+      "cve": "CVE-2026-0300",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "name": "Palo Alto Networks PAN-OS Out-of-bounds Write Vulnerability"
+    }
+  ]
 }
