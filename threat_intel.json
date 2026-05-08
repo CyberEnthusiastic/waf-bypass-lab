@@ -1,36 +1,42 @@
 {
-  "updated_at": "2026-05-07T14:53:03.323566+00:00",
-  "daily_tip": "Keep dependencies updated \u2014 90% of breaches exploit known CVEs.",
-  "tip_number": 4,
-  "cisa_kev_count": 1588,
+  "updated_at": "2026-05-08T17:34:34.724720+00:00",
+  "daily_tip": "Log everything, alert on anomalies \u2014 you can't detect what you can't see.",
+  "tip_number": 5,
+  "cisa_kev_count": 1590,
   "recent_cves": [
     {
-      "id": "CVE-2026-44405",
-      "description": "In Paramiko through 4.0.0 before a448945, rsakey.py allows the SHA-1 algorithm."
+      "id": "CVE-2026-44597",
+      "description": "Tor before 0.4.9.7 has an out-of-bounds read when an END, a TRUNCATE, or a TRUNCATED cell lacks a reason in its payload, aka TROVE-2026-011."
     },
     {
-      "id": "CVE-2025-71251",
-      "description": "In IMS, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed."
+      "id": "CVE-2026-40003",
+      "description": "ZTE ZX297520V3 BootROM contains a vulnerability that allows arbitrary memory writes via USB. Attackers can exploit the lack of target address validation in the USB download mode to write data to any l"
     },
     {
-      "id": "CVE-2025-71252",
-      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed."
+      "id": "CVE-2026-6222",
+      "description": "The Forminator Forms plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 1.51.1. This is due to the `processRequest()` method in `Forminator_Admin_Module_Edit_P"
     },
     {
-      "id": "CVE-2025-71253",
-      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed."
+      "id": "CVE-2026-44599",
+      "description": "Tor before 0.4.9.7 can attempt or accept BEGIN_DIR via conflux legs, aka TROVE-2026-008."
     },
     {
-      "id": "CVE-2025-71254",
-      "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed."
+      "id": "CVE-2026-44600",
+      "description": "Tor before 0.4.9.7 mishandles accounting of the conflux out-of-order queue during the clearing of a queue, aka TROVE-2026-010."
     }
   ],
   "new_kev_today": [
     {
-      "cve": "CVE-2026-0300",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "name": "Palo Alto Networks PAN-OS Out-of-bounds Write Vulnerability"
+      "cve": "CVE-2026-42208",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "name": "BerriAI LiteLLM SQL Injection Vulnerability"
+    },
+    {
+      "cve": "CVE-2026-6973",
+      "vendor": "Ivanti",
+      "product": "Endpoint Manager Mobile (EPMM)",
+      "name": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability"
     }
   ]
 }
