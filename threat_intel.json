@@ -1,42 +1,29 @@
 {
-  "updated_at": "2026-05-08T17:34:34.724720+00:00",
-  "daily_tip": "Log everything, alert on anomalies \u2014 you can't detect what you can't see.",
-  "tip_number": 5,
+  "updated_at": "2026-05-10T22:02:24.460855+00:00",
+  "daily_tip": "Segment your network \u2014 lateral movement is how breaches escalate.",
+  "tip_number": 7,
   "cisa_kev_count": 1590,
   "recent_cves": [
     {
-      "id": "CVE-2026-44597",
-      "description": "Tor before 0.4.9.7 has an out-of-bounds read when an END, a TRUNCATE, or a TRUNCATED cell lacks a reason in its payload, aka TROVE-2026-011."
+      "id": "CVE-2026-42455",
+      "description": "Linkwarden is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages. In versions 2.14.0 and prior, the archive upload endpoint (POST /api/v1/archives/[lin"
     },
     {
-      "id": "CVE-2026-40003",
-      "description": "ZTE ZX297520V3 BootROM contains a vulnerability that allows arbitrary memory writes via USB. Attackers can exploit the lack of target address validation in the USB download mode to write data to any l"
+      "id": "CVE-2026-44313",
+      "description": "Linkwarden is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages. Prior to version 2.13.0, a Server-Side Request Forgery (SSRF) vulnerability in the fe"
     },
     {
-      "id": "CVE-2026-6222",
-      "description": "The Forminator Forms plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 1.51.1. This is due to the `processRequest()` method in `Forminator_Admin_Module_Edit_P"
+      "id": "CVE-2026-41705",
+      "description": "Spring AI's MilvusVectorStore#doDelete(List) implementation is vulnerable to filter-expression injection via unsanitized document IDs.\nSpring AI 1.0.x: affected from 1.0.0 through latest 1.0.x; upgrad"
     },
     {
-      "id": "CVE-2026-44599",
-      "description": "Tor before 0.4.9.7 can attempt or accept BEGIN_DIR via conflux legs, aka TROVE-2026-008."
+      "id": "CVE-2026-6664",
+      "description": "An integer overflow in network packet parsing code in PgBouncer before 1.25.2 bypasses a boundary check and can lead to a crash. An unauthenticated remote attacker can crash PgBouncer with a malformed"
     },
     {
-      "id": "CVE-2026-44600",
-      "description": "Tor before 0.4.9.7 mishandles accounting of the conflux out-of-order queue during the clearing of a queue, aka TROVE-2026-010."
+      "id": "CVE-2026-6665",
+      "description": "The SCRAM code in PgBouncer before 1.25.2 did not check the return value of strlcat() correctly when building the contents of the SCRAM client-final-message. A malicious backend that sends a SCRAM ser"
     }
   ],
-  "new_kev_today": [
-    {
-      "cve": "CVE-2026-42208",
-      "vendor": "BerriAI",
-      "product": "LiteLLM",
-      "name": "BerriAI LiteLLM SQL Injection Vulnerability"
-    },
-    {
-      "cve": "CVE-2026-6973",
-      "vendor": "Ivanti",
-      "product": "Endpoint Manager Mobile (EPMM)",
-      "name": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability"
-    }
-  ]
+  "new_kev_today": []
 }
