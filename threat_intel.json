@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-05-10T22:02:24.460855+00:00",
-  "daily_tip": "Segment your network \u2014 lateral movement is how breaches escalate.",
-  "tip_number": 7,
+  "updated_at": "2026-05-11T14:08:29.133121+00:00",
+  "daily_tip": "Encrypt data at rest AND in transit \u2014 encryption at rest alone is not enough.",
+  "tip_number": 8,
   "cisa_kev_count": 1590,
   "recent_cves": [
     {
-      "id": "CVE-2026-42455",
-      "description": "Linkwarden is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages. In versions 2.14.0 and prior, the archive upload endpoint (POST /api/v1/archives/[lin"
+      "id": "CVE-2026-8214",
+      "description": "A vulnerability was found in Industrial Application Software IAS Canias ERP 8.03. This affects the function doAction of the component RMI Interface. The manipulation of the argument sessionId results "
     },
     {
-      "id": "CVE-2026-44313",
-      "description": "Linkwarden is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages. Prior to version 2.13.0, a Server-Side Request Forgery (SSRF) vulnerability in the fe"
+      "id": "CVE-2026-8215",
+      "description": "A vulnerability was determined in Industrial Application Software IAS Canias ERP 8.03. This vulnerability affects the function iasRequestFileEvent of the component RMI Interface. This manipulation of "
     },
     {
-      "id": "CVE-2026-41705",
-      "description": "Spring AI's MilvusVectorStore#doDelete(List) implementation is vulnerable to filter-expression injection via unsanitized document IDs.\nSpring AI 1.0.x: affected from 1.0.0 through latest 1.0.x; upgrad"
+      "id": "CVE-2026-8216",
+      "description": "A vulnerability was identified in Industrial Application Software IAS Canias ERP 8.03. This issue affects the function iasServerRemoteInterface.doAction of the component Java RMI Session Management. S"
     },
     {
-      "id": "CVE-2026-6664",
-      "description": "An integer overflow in network packet parsing code in PgBouncer before 1.25.2 bypasses a boundary check and can lead to a crash. An unauthenticated remote attacker can crash PgBouncer with a malformed"
+      "id": "CVE-2026-8217",
+      "description": "A security flaw has been discovered in Industrial Application Software IAS Canias ERP 8.03. Impacted is the function Runtime.getRuntime.exec of the component RMI Interface. Performing a manipulation o"
     },
     {
-      "id": "CVE-2026-6665",
-      "description": "The SCRAM code in PgBouncer before 1.25.2 did not check the return value of strlcat() correctly when building the contents of the SCRAM client-final-message. A malicious backend that sends a SCRAM ser"
+      "id": "CVE-2026-8218",
+      "description": "A weakness has been identified in Devs Palace ERP Online up to 4.0.0. The affected element is an unknown function of the file /inventory/purchase_return_save. Executing a manipulation can lead to cros"
     }
   ],
   "new_kev_today": []
