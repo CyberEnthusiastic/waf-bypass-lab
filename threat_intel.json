@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-05-11T14:08:29.133121+00:00",
-  "daily_tip": "Encrypt data at rest AND in transit \u2014 encryption at rest alone is not enough.",
-  "tip_number": 8,
+  "updated_at": "2026-05-12T14:37:07.569836+00:00",
+  "daily_tip": "Conduct tabletop exercises quarterly \u2014 IR plans rot without practice.",
+  "tip_number": 9,
   "cisa_kev_count": 1590,
   "recent_cves": [
     {
-      "id": "CVE-2026-8214",
-      "description": "A vulnerability was found in Industrial Application Software IAS Canias ERP 8.03. This affects the function doAction of the component RMI Interface. The manipulation of the argument sessionId results "
+      "id": "CVE-2026-8252",
+      "description": "A vulnerability was determined in Open5GS up to 2.7.7. Affected is the function smf_nsmf_handle_create_data_in_hsmf of the component SMF. Executing a manipulation can lead to null pointer dereference."
     },
     {
-      "id": "CVE-2026-8215",
-      "description": "A vulnerability was determined in Industrial Application Software IAS Canias ERP 8.03. This vulnerability affects the function iasRequestFileEvent of the component RMI Interface. This manipulation of "
+      "id": "CVE-2026-8253",
+      "description": "A vulnerability was identified in Devs Palace ERP Online up to 4.0.0. Affected by this vulnerability is an unknown functionality of the file /inventory/purchase_save. The manipulation leads to cross s"
     },
     {
-      "id": "CVE-2026-8216",
-      "description": "A vulnerability was identified in Industrial Application Software IAS Canias ERP 8.03. This issue affects the function iasServerRemoteInterface.doAction of the component Java RMI Session Management. S"
+      "id": "CVE-2026-8254",
+      "description": "A security flaw has been discovered in Devs Palace ERP Online up to 4.0.0. Affected by this issue is some unknown functionality of the file /inventory/sales_save. The manipulation results in cross sit"
     },
     {
-      "id": "CVE-2026-8217",
-      "description": "A security flaw has been discovered in Industrial Application Software IAS Canias ERP 8.03. Impacted is the function Runtime.getRuntime.exec of the component RMI Interface. Performing a manipulation o"
+      "id": "CVE-2026-8255",
+      "description": "A weakness has been identified in Devs Palace ERP Online up to 4.0.0. This affects an unknown part of the file /inventory/add_new_customer. This manipulation causes cross site scripting. The attack ca"
     },
     {
-      "id": "CVE-2026-8218",
-      "description": "A weakness has been identified in Devs Palace ERP Online up to 4.0.0. The affected element is an unknown function of the file /inventory/purchase_return_save. Executing a manipulation can lead to cros"
+      "id": "CVE-2026-8256",
+      "description": "A security vulnerability has been detected in Devs Palace ERP Online up to 4.0.0. This vulnerability affects unknown code of the file /accounts/mr-save. Such manipulation leads to cross site scripting"
     }
   ],
   "new_kev_today": []
