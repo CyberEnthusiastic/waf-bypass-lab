@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-05-12T14:37:07.569836+00:00",
-  "daily_tip": "Conduct tabletop exercises quarterly \u2014 IR plans rot without practice.",
-  "tip_number": 9,
-  "cisa_kev_count": 1590,
+  "updated_at": "2026-05-18T16:31:32.390354+00:00",
+  "daily_tip": "Review your S3 bucket policies weekly \u2014 public buckets cause breaches.",
+  "tip_number": 15,
+  "cisa_kev_count": 1592,
   "recent_cves": [
     {
-      "id": "CVE-2026-8252",
-      "description": "A vulnerability was determined in Open5GS up to 2.7.7. Affected is the function smf_nsmf_handle_create_data_in_hsmf of the component SMF. Executing a manipulation can lead to null pointer dereference."
+      "id": "CVE-2026-8723",
+      "description": "### Summary\n\n\n\n`qs.stringify` throws `TypeError` when called with `arrayFormat: 'comma'` and `encodeValuesOnly: true` on an array containing `null` or `undefined`. The throw is synchronous and not han"
     },
     {
-      "id": "CVE-2026-8253",
-      "description": "A vulnerability was identified in Devs Palace ERP Online up to 4.0.0. Affected by this vulnerability is an unknown functionality of the file /inventory/purchase_save. The manipulation leads to cross s"
+      "id": "CVE-2026-8724",
+      "description": "A security flaw has been discovered in Dataease 2.10.20. Impacted is the function SqlparserUtils.transFilter of the file SqlparserUtils.java of the component Data Dashboard. The manipulation results i"
     },
     {
-      "id": "CVE-2026-8254",
-      "description": "A security flaw has been discovered in Devs Palace ERP Online up to 4.0.0. Affected by this issue is some unknown functionality of the file /inventory/sales_save. The manipulation results in cross sit"
+      "id": "CVE-2026-8725",
+      "description": "A weakness has been identified in CoreWorxLab CAAL up to 1.6.0. The affected element is an unknown function of the file src/caal/webhooks.py of the component test-hass Endpoint. This manipulation caus"
     },
     {
-      "id": "CVE-2026-8255",
-      "description": "A weakness has been identified in Devs Palace ERP Online up to 4.0.0. This affects an unknown part of the file /inventory/add_new_customer. This manipulation causes cross site scripting. The attack ca"
+      "id": "CVE-2026-8719",
+      "description": "The AI Engine \u2013 The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Privilege Escalation in version 3.4.9. This is due to missing WordPress capability enforcement in th"
     },
     {
-      "id": "CVE-2026-8256",
-      "description": "A security vulnerability has been detected in Devs Palace ERP Online up to 4.0.0. This vulnerability affects unknown code of the file /accounts/mr-save. Such manipulation leads to cross site scripting"
+      "id": "CVE-2026-8728",
+      "description": "A security vulnerability has been detected in Open5GS up to 2.7.7. The impacted element is the function ogs_sbi_discovery_option_parse_plmn_list in the library /lib/sbi/conv.c of the component NRF. Su"
     }
   ],
   "new_kev_today": []
