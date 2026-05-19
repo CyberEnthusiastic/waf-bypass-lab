@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-05-18T16:31:32.390354+00:00",
-  "daily_tip": "Review your S3 bucket policies weekly \u2014 public buckets cause breaches.",
-  "tip_number": 15,
+  "updated_at": "2026-05-19T14:11:13.288347+00:00",
+  "daily_tip": "Use SBOM generation in CI/CD \u2014 know what you ship before you ship it.",
+  "tip_number": 16,
   "cisa_kev_count": 1592,
   "recent_cves": [
     {
-      "id": "CVE-2026-8723",
-      "description": "### Summary\n\n\n\n`qs.stringify` throws `TypeError` when called with `arrayFormat: 'comma'` and `encodeValuesOnly: true` on an array containing `null` or `undefined`. The throw is synchronous and not han"
+      "id": "CVE-2026-8770",
+      "description": "A vulnerability was identified in continuedev continue up to 1.2.22. This affects the function lsTool of the file core/tools/implementations/lsTool.ts of the component JSON-RPC Server. Such manipulati"
     },
     {
-      "id": "CVE-2026-8724",
-      "description": "A security flaw has been discovered in Dataease 2.10.20. Impacted is the function SqlparserUtils.transFilter of the file SqlparserUtils.java of the component Data Dashboard. The manipulation results i"
+      "id": "CVE-2026-8771",
+      "description": "A security flaw has been discovered in linlinjava litemall up to 1.8.0. This impacts the function list of the file litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/web/WxGoodsController.java o"
     },
     {
-      "id": "CVE-2026-8725",
-      "description": "A weakness has been identified in CoreWorxLab CAAL up to 1.6.0. The affected element is an unknown function of the file src/caal/webhooks.py of the component test-hass Endpoint. This manipulation caus"
+      "id": "CVE-2026-8772",
+      "description": "A weakness has been identified in linlinjava litemall up to 1.8.0. Affected is an unknown function of the component Admin Endpoint. Executing a manipulation can lead to sql injection. The attack can b"
     },
     {
-      "id": "CVE-2026-8719",
-      "description": "The AI Engine \u2013 The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Privilege Escalation in version 3.4.9. This is due to missing WordPress capability enforcement in th"
+      "id": "CVE-2026-8773",
+      "description": "A security vulnerability has been detected in linlinjava litemall up to 1.8.0. Affected by this vulnerability is the function backup/load of the file litemall-db/src/main/java/org/linlinjava/litemall/"
     },
     {
-      "id": "CVE-2026-8728",
-      "description": "A security vulnerability has been detected in Open5GS up to 2.7.7. The impacted element is the function ogs_sbi_discovery_option_parse_plmn_list in the library /lib/sbi/conv.c of the component NRF. Su"
+      "id": "CVE-2026-8774",
+      "description": "A vulnerability was detected in Edimax BR-6228NC 1.22. Affected by this issue is the function mp of the file /goform/mp of the component POST Request Handler. The manipulation of the argument command "
     }
   ],
   "new_kev_today": []
