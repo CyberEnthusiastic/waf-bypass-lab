@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-05-19T14:11:13.288347+00:00",
-  "daily_tip": "Use SBOM generation in CI/CD \u2014 know what you ship before you ship it.",
-  "tip_number": 16,
+  "updated_at": "2026-05-20T16:19:44.812650+00:00",
+  "daily_tip": "Block known-bad IPs at the WAF layer \u2014 don't rely on application code.",
+  "tip_number": 17,
   "cisa_kev_count": 1592,
   "recent_cves": [
     {
-      "id": "CVE-2026-8770",
-      "description": "A vulnerability was identified in continuedev continue up to 1.2.22. This affects the function lsTool of the file core/tools/implementations/lsTool.ts of the component JSON-RPC Server. Such manipulati"
+      "id": "CVE-2026-32244",
+      "description": "Discourse is an open-source discussion platform. In versions prior to 2026.1.4, 2026.3.1, 2026.4.1 and 2026.5.0-latest.1, outdated cached AI summaries can leak removed content to anonymous and unprivi"
     },
     {
-      "id": "CVE-2026-8771",
-      "description": "A security flaw has been discovered in linlinjava litemall up to 1.8.0. This impacts the function list of the file litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/web/WxGoodsController.java o"
+      "id": "CVE-2026-32312",
+      "description": "GLPI is a free asset and IT management software package. In versions 11.0.0 through 11.0.6, an authenticated user with forms READ permission can export the structure of unauthorized forms. This issue "
     },
     {
-      "id": "CVE-2026-8772",
-      "description": "A weakness has been identified in linlinjava litemall up to 1.8.0. Affected is an unknown function of the component Admin Endpoint. Executing a manipulation can lead to sql injection. The attack can b"
+      "id": "CVE-2026-32323",
+      "description": "Mullvad VPN is a VPN client app for desktop and mobile. When using macOS with versions 2026.1 and below, Mullvad VPN may allow local privilege escalation during installation or upgrade. The installer "
     },
     {
-      "id": "CVE-2026-8773",
-      "description": "A security vulnerability has been detected in linlinjava litemall up to 1.8.0. Affected by this vulnerability is the function backup/load of the file litemall-db/src/main/java/org/linlinjava/litemall/"
+      "id": "CVE-2026-33052",
+      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.0 and 2.28.1 allow a low-privileged authenticated user assigned the \"add_profile_threshold\" permission to create a global p"
     },
     {
-      "id": "CVE-2026-8774",
-      "description": "A vulnerability was detected in Edimax BR-6228NC 1.22. Affected by this issue is the function mp of the file /goform/mp of the component POST Request Handler. The manipulation of the argument command "
+      "id": "CVE-2026-33232",
+      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Versions 0.4.2 through 0.6.51 are vulnerable to an unauthenticated Denial of "
     }
   ],
   "new_kev_today": []
