@@ -1,29 +1,60 @@
 {
-  "updated_at": "2026-05-20T16:19:44.812650+00:00",
-  "daily_tip": "Block known-bad IPs at the WAF layer \u2014 don't rely on application code.",
-  "tip_number": 17,
-  "cisa_kev_count": 1592,
+  "updated_at": "2026-05-21T14:08:04.370665+00:00",
+  "daily_tip": "Monitor for credential leaks on GitHub/Pastebin \u2014 attackers automate this.",
+  "tip_number": 18,
+  "cisa_kev_count": 1599,
   "recent_cves": [
     {
-      "id": "CVE-2026-32244",
-      "description": "Discourse is an open-source discussion platform. In versions prior to 2026.1.4, 2026.3.1, 2026.4.1 and 2026.5.0-latest.1, outdated cached AI summaries can leak removed content to anonymous and unprivi"
+      "id": "CVE-2026-34754",
+      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.1 and prior allow an authenticated user to upload attachments to private Issues they are not authorized to access. This iss"
     },
     {
-      "id": "CVE-2026-32312",
-      "description": "GLPI is a free asset and IT management software package. In versions 11.0.0 through 11.0.6, an authenticated user with forms READ permission can export the structure of unauthorized forms. This issue "
+      "id": "CVE-2026-34970",
+      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.1 and prior allow a bugnote author to access the note's Revisions page after losing access to the parent private issue. Thi"
     },
     {
-      "id": "CVE-2026-32323",
-      "description": "Mullvad VPN is a VPN client app for desktop and mobile. When using macOS with versions 2026.1 and below, Mullvad VPN may allow local privilege escalation during installation or upgrade. The installer "
+      "id": "CVE-2026-35593",
+      "description": "Trilium Notes is an open-source, cross-platform hierarchical note taking application for building large personal knowledge bases. Versions 0.102.1 and prior are vulnerable to Local File Inclusion, all"
     },
     {
-      "id": "CVE-2026-33052",
-      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.0 and 2.28.1 allow a low-privileged authenticated user assigned the \"add_profile_threshold\" permission to create a global p"
+      "id": "CVE-2026-39309",
+      "description": "Trilium Notes is a cross-platform, hierarchical note taking application focused on building large personal knowledge bases. In versions 0.102.1 and prior, the Electron configuration is vulnerable to T"
     },
     {
-      "id": "CVE-2026-33232",
-      "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Versions 0.4.2 through 0.6.51 are vulnerable to an unauthenticated Denial of "
+      "id": "CVE-2026-45585",
+      "description": "Microsoft is aware of a security feature bypass vulnerability in Windows publicly referred to as &quot;YellowKey&quot;. The proof of concept for this vulnerability has been made public violating coord"
     }
   ],
-  "new_kev_today": []
+  "new_kev_today": [
+    {
+      "cve": "CVE-2008-4250",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "name": "Microsoft Windows Buffer Overflow Vulnerability"
+    },
+    {
+      "cve": "CVE-2009-1537",
+      "vendor": "Microsoft",
+      "product": "DirectX",
+      "name": "Microsoft DirectX NULL Byte Overwrite Vulnerability"
+    },
+    {
+      "cve": "CVE-2009-3459",
+      "vendor": "Adobe",
+      "product": "Acrobat and Reader",
+      "name": "Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability"
+    },
+    {
+      "cve": "CVE-2010-0249",
+      "vendor": "Microsoft",
+      "product": "Internet Explorer",
+      "name": "Microsoft Internet Explorer Use-After-Free Vulnerability"
+    },
+    {
+      "cve": "CVE-2010-0806",
+      "vendor": "Microsoft",
+      "product": "Internet Explorer",
+      "name": "Microsoft Internet Explorer Use-After-Free Vulnerability"
+    }
+  ]
 }
