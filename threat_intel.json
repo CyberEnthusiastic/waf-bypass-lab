@@ -1,60 +1,42 @@
 {
-  "updated_at": "2026-05-21T14:08:04.370665+00:00",
-  "daily_tip": "Monitor for credential leaks on GitHub/Pastebin \u2014 attackers automate this.",
-  "tip_number": 18,
-  "cisa_kev_count": 1599,
+  "updated_at": "2026-05-22T14:15:51.744910+00:00",
+  "daily_tip": "Use short-lived tokens instead of long-lived API keys \u2014 reduce blast radius.",
+  "tip_number": 19,
+  "cisa_kev_count": 1601,
   "recent_cves": [
     {
-      "id": "CVE-2026-34754",
-      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.1 and prior allow an authenticated user to upload attachments to private Issues they are not authorized to access. This iss"
+      "id": "CVE-2026-40165",
+      "description": "authentik is an open-source identity provider. Versions 2025.12.4 and prior, and versions 2026.2.0-rc1 through 2026.2.2 were vulnerable to Authentication Bypass through SAML NameID XML Comment Injecti"
     },
     {
-      "id": "CVE-2026-34970",
-      "description": "Mantis Bug Tracker (MantisBT) is an open source issue tracker. Versions 2.28.1 and prior allow a bugnote author to access the note's Revisions page after losing access to the parent private issue. Thi"
+      "id": "CVE-2026-9149",
+      "description": "A flaw was found in libsolv. This heap buffer overflow vulnerability occurs when a victim processes a specially crafted `.solv` file containing negative size values in the `repo_add_solv` function. Th"
     },
     {
-      "id": "CVE-2026-35593",
-      "description": "Trilium Notes is an open-source, cross-platform hierarchical note taking application for building large personal knowledge bases. Versions 0.102.1 and prior are vulnerable to Local File Inclusion, all"
+      "id": "CVE-2026-1881",
+      "description": "The Broadstreet plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.52.2 via the get_sponsored_meta AJAX action due to missing validation on "
     },
     {
-      "id": "CVE-2026-39309",
-      "description": "Trilium Notes is a cross-platform, hierarchical note taking application focused on building large personal knowledge bases. In versions 0.102.1 and prior, the Electron configuration is vulnerable to T"
+      "id": "CVE-2026-48172",
+      "description": "LiteSpeed User-End cPanel Plugin before 2.4.5 allows privilege escalation (possibly to root), as exploited in the wild in May 2026. Detection is best done via a command line of grep -rE \"cpanel_jsonap"
     },
     {
-      "id": "CVE-2026-45585",
-      "description": "Microsoft is aware of a security feature bypass vulnerability in Windows publicly referred to as &quot;YellowKey&quot;. The proof of concept for this vulnerability has been made public violating coord"
+      "id": "CVE-2026-9152",
+      "description": "A missing authentication vulnerability exists in the Altium 365 SearchService. A legacy SOAP endpoint exposes search index operations without requiring authentication, session tokens, or any form of i"
     }
   ],
   "new_kev_today": [
     {
-      "cve": "CVE-2008-4250",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "name": "Microsoft Windows Buffer Overflow Vulnerability"
+      "cve": "CVE-2025-34291",
+      "vendor": "Langflow",
+      "product": "Langflow",
+      "name": "Langflow Origin Validation Error Vulnerability"
     },
     {
-      "cve": "CVE-2009-1537",
-      "vendor": "Microsoft",
-      "product": "DirectX",
-      "name": "Microsoft DirectX NULL Byte Overwrite Vulnerability"
-    },
-    {
-      "cve": "CVE-2009-3459",
-      "vendor": "Adobe",
-      "product": "Acrobat and Reader",
-      "name": "Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability"
-    },
-    {
-      "cve": "CVE-2010-0249",
-      "vendor": "Microsoft",
-      "product": "Internet Explorer",
-      "name": "Microsoft Internet Explorer Use-After-Free Vulnerability"
-    },
-    {
-      "cve": "CVE-2010-0806",
-      "vendor": "Microsoft",
-      "product": "Internet Explorer",
-      "name": "Microsoft Internet Explorer Use-After-Free Vulnerability"
+      "cve": "CVE-2026-34926",
+      "vendor": "Trend Micro",
+      "product": "Apex One",
+      "name": "Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability"
     }
   ]
 }
