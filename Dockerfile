@@ -2,7 +2,7 @@
 # Build:  docker build -t ai-sec-tool .
 # Run:    docker run --rm -v "$(pwd)/target:/work/target" ai-sec-tool target/
 
-FROM python:3.12-slim-bookworm
+FROM python:3.14-slim-bookworm
 
 LABEL org.opencontainers.image.title="AI Security Projects"
 LABEL org.opencontainers.image.source="https://github.com/CyberEnthusiastic"
